@@ -22,3 +22,7 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Legacy root resource copies
+/Auxiliary_Files/
+/Example_data/
