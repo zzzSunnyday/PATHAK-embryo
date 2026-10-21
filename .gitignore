@@ -1,0 +1,24 @@
+
+# Local resources and runtime files
+/.cache/
+/.conda-env/
+/.venv/
+/models/
+/pipe_full_BP/
+*.jar
+__pycache__/
+.ipynb_checkpoints/
+/spark-warehouse/
+/metastore_db/
+/derby.log
+
+# Downloaded ontology and generated outputs
+/data/go/go.obo
+/GO_BP_Ontology_corups.tsv
+/GO_BP_Ontology_corups_Filtered.tsv
+/predictions_full_BP.pickle
+
+# Local credentials
+.env
+.env.*
+!.env.example
