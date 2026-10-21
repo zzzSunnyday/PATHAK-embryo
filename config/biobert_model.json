@@ -1,0 +1,41 @@
+{
+  "name": "biobert_pubmed_sentence",
+  "model_path": "models/biobert_pubmed_sentence",
+  "upstream_name": "sent_biobert_pubmed_base_cased",
+  "source_url": "https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_pubmed_base_cased_en_2.6.2_2.4_1600449483871.zip",
+  "format": "com.johnsnowlabs.nlp.embeddings.BertSentenceEmbeddings",
+  "dimension": 768,
+  "case_sensitive": true,
+  "max_sentence_length": 128,
+  "protocol": "masked_mean_parallel_sentence_v1",
+  "pooling": "float32 input_mask mean; retain CLS/SEP; exclude PAD",
+  "batch_size": 16,
+  "tf_config_proto_bytes": [
+    16,
+    8,
+    40,
+    8
+  ],
+  "sentence_max_intra_op_parallelism": 2,
+  "omp_num_threads": 2,
+  "archive_sha256": "3583a8f750a8891440c1338a46399a9f18a2fc60f5db113506183e0a83c4161b",
+  "metadata_sha256": "a945ec990d0edf1773a90e40ace14cf298db038c318d8a87df63dd063c4f6763",
+  "graph_sha256": "8e5f288ae33ece7f72783989fa83f60ad562e4b1df9f4ada0256de0411f58ba7",
+  "weights_sha256": {
+    "variables.data-00000-of-00001": "0c861e31aee67b085d618f582a5a7fcfe4129753f9578281c45ce86a8ede6c22",
+    "variables.index": "0121af1dfa09816805a6fe8185d25565f8b26d979b0b5c658a73995e2b7d0289"
+  },
+  "path_migrations": {
+    "models/sent_biobert_pubmed_base_cased": ".backups/biobert-models/sent_biobert_pubmed_base_cased",
+    "models/sent_biobert_pubmed_base_cased_masked_mean": ".backups/biobert-models/sent_biobert_pubmed_base_cased_masked_mean",
+    "models/sent_biobert_pubmed_base_cased_parallel_masked_mean": ".backups/biobert-models/sent_biobert_pubmed_base_cased_parallel_masked_mean",
+    "models/sent_biobert_pubmed_base_cased_parallel_masked_mean_cpu8": "models/biobert_pubmed_sentence"
+  },
+  "archived_source_record": ".backups/biobert-models/biobert-source.json",
+  "checksums": "resources/SHA256SUMS",
+  "reports": [
+    "resources/checks/reports/BIOBERT_FIX_REPORT.md",
+    "resources/checks/reports/BIOBERT_PERFORMANCE_REPORT.md"
+  ],
+  "layout_check": "resources/checks/embedding-layout-reorganization.json"
+}

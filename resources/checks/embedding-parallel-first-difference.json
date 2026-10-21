@@ -1,0 +1,606 @@
+{
+  "repeated8": {
+    "bert/embeddings/add": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/add_1": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/LayerNorm/moments/mean": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/LayerNorm/moments/variance": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/LayerNorm/batchnorm/add": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/LayerNorm/batchnorm/Rsqrt": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 24
+    },
+    "bert/embeddings/LayerNorm/batchnorm/mul": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 15728
+    },
+    "bert/embeddings/LayerNorm/batchnorm/mul_1": {
+      "max_abs": 4.76837158203125e-07,
+      "changed_values": 13720
+    },
+    "bert/embeddings/LayerNorm/batchnorm/mul_2": {
+      "max_abs": 7.450580596923828e-09,
+      "changed_values": 13992
+    },
+    "bert/embeddings/LayerNorm/batchnorm/sub": {
+      "max_abs": 2.9802322387695312e-08,
+      "changed_values": 9592
+    },
+    "bert/embeddings/LayerNorm/batchnorm/add_1": {
+      "max_abs": 4.76837158203125e-07,
+      "changed_values": 11880
+    },
+    "bert/encoder/layer_0/attention/self/query/MatMul": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 14696
+    },
+    "bert/encoder/layer_0/attention/self/key/MatMul": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 14512
+    },
+    "bert/encoder/layer_0/attention/self/value/MatMul": {
+      "max_abs": 4.76837158203125e-07,
+      "changed_values": 15096
+    },
+    "bert/encoder/layer_0/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 98176
+    },
+    "bert/encoder/layer_0/intermediate/dense/BiasAdd": {
+      "max_abs": 3.0994415283203125e-06,
+      "changed_values": 455816
+    },
+    "bert/encoder/layer_0/intermediate/dense/Tanh": {
+      "max_abs": 1.7285346984863281e-06,
+      "changed_values": 304296
+    },
+    "bert/encoder/layer_0/intermediate/dense/mul_3": {
+      "max_abs": 1.8477439880371094e-06,
+      "changed_values": 419616
+    },
+    "bert/encoder/layer_0/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 145664
+    },
+    "bert/encoder/layer_1/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 152576
+    },
+    "bert/encoder/layer_1/intermediate/dense/BiasAdd": {
+      "max_abs": 3.814697265625e-06,
+      "changed_values": 570480
+    },
+    "bert/encoder/layer_1/intermediate/dense/Tanh": {
+      "max_abs": 2.086162567138672e-06,
+      "changed_values": 407288
+    },
+    "bert/encoder/layer_1/intermediate/dense/mul_3": {
+      "max_abs": 3.814697265625e-06,
+      "changed_values": 536816
+    },
+    "bert/encoder/layer_1/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.9073486328125e-06,
+      "changed_values": 157952
+    },
+    "bert/encoder/layer_2/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 5.7220458984375e-06,
+      "changed_values": 158835
+    },
+    "bert/encoder/layer_2/intermediate/dense/BiasAdd": {
+      "max_abs": 5.7220458984375e-06,
+      "changed_values": 593162
+    },
+    "bert/encoder/layer_2/intermediate/dense/Tanh": {
+      "max_abs": 1.9818544387817383e-06,
+      "changed_values": 444964
+    },
+    "bert/encoder/layer_2/intermediate/dense/mul_3": {
+      "max_abs": 3.814697265625e-06,
+      "changed_values": 567213
+    },
+    "bert/encoder/layer_2/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.9073486328125e-06,
+      "changed_values": 161213
+    },
+    "bert/encoder/layer_3/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 161089
+    },
+    "bert/encoder/layer_3/intermediate/dense/BiasAdd": {
+      "max_abs": 5.7220458984375e-06,
+      "changed_values": 603276
+    },
+    "bert/encoder/layer_3/intermediate/dense/Tanh": {
+      "max_abs": 2.291053533554077e-06,
+      "changed_values": 453847
+    },
+    "bert/encoder/layer_3/intermediate/dense/mul_3": {
+      "max_abs": 4.76837158203125e-06,
+      "changed_values": 574287
+    },
+    "bert/encoder/layer_3/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.9073486328125e-06,
+      "changed_values": 162654
+    },
+    "bert/encoder/layer_4/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 162533
+    },
+    "bert/encoder/layer_4/intermediate/dense/BiasAdd": {
+      "max_abs": 5.7220458984375e-06,
+      "changed_values": 609458
+    },
+    "bert/encoder/layer_4/intermediate/dense/Tanh": {
+      "max_abs": 2.294778823852539e-06,
+      "changed_values": 467193
+    },
+    "bert/encoder/layer_4/intermediate/dense/mul_3": {
+      "max_abs": 3.5762786865234375e-06,
+      "changed_values": 581402
+    },
+    "bert/encoder/layer_4/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 2.86102294921875e-06,
+      "changed_values": 163496
+    },
+    "bert/encoder/layer_5/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 9.5367431640625e-06,
+      "changed_values": 163841
+    },
+    "bert/encoder/layer_5/intermediate/dense/BiasAdd": {
+      "max_abs": 5.7220458984375e-06,
+      "changed_values": 613566
+    },
+    "bert/encoder/layer_5/intermediate/dense/Tanh": {
+      "max_abs": 3.769993782043457e-06,
+      "changed_values": 479351
+    },
+    "bert/encoder/layer_5/intermediate/dense/mul_3": {
+      "max_abs": 3.814697265625e-06,
+      "changed_values": 585319
+    },
+    "bert/encoder/layer_5/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 2.86102294921875e-06,
+      "changed_values": 163746
+    },
+    "bert/encoder/layer_6/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 164127
+    },
+    "bert/encoder/layer_6/intermediate/dense/BiasAdd": {
+      "max_abs": 5.7220458984375e-06,
+      "changed_values": 618681
+    },
+    "bert/encoder/layer_6/intermediate/dense/Tanh": {
+      "max_abs": 2.6151537895202637e-06,
+      "changed_values": 492207
+    },
+    "bert/encoder/layer_6/intermediate/dense/mul_3": {
+      "max_abs": 3.337860107421875e-06,
+      "changed_values": 588782
+    },
+    "bert/encoder/layer_6/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 3.814697265625e-06,
+      "changed_values": 164189
+    },
+    "bert/encoder/layer_7/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.52587890625e-05,
+      "changed_values": 164558
+    },
+    "bert/encoder/layer_7/intermediate/dense/BiasAdd": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 623895
+    },
+    "bert/encoder/layer_7/intermediate/dense/Tanh": {
+      "max_abs": 3.0100345611572266e-06,
+      "changed_values": 501633
+    },
+    "bert/encoder/layer_7/intermediate/dense/mul_3": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 597154
+    },
+    "bert/encoder/layer_7/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 4.76837158203125e-06,
+      "changed_values": 164573
+    },
+    "bert/encoder/layer_8/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 9.5367431640625e-06,
+      "changed_values": 164415
+    },
+    "bert/encoder/layer_8/intermediate/dense/BiasAdd": {
+      "max_abs": 2.2411346435546875e-05,
+      "changed_values": 622734
+    },
+    "bert/encoder/layer_8/intermediate/dense/Tanh": {
+      "max_abs": 1.1324882507324219e-05,
+      "changed_values": 503815
+    },
+    "bert/encoder/layer_8/intermediate/dense/mul_3": {
+      "max_abs": 2.288818359375e-05,
+      "changed_values": 598268
+    },
+    "bert/encoder/layer_8/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 2.956390380859375e-05,
+      "changed_values": 164249
+    },
+    "bert/encoder/layer_9/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 9.822845458984375e-05,
+      "changed_values": 164468
+    },
+    "bert/encoder/layer_9/intermediate/dense/BiasAdd": {
+      "max_abs": 0.0001010894775390625,
+      "changed_values": 621159
+    },
+    "bert/encoder/layer_9/intermediate/dense/Tanh": {
+      "max_abs": 5.2988529205322266e-05,
+      "changed_values": 505577
+    },
+    "bert/encoder/layer_9/intermediate/dense/mul_3": {
+      "max_abs": 0.00011241436004638672,
+      "changed_values": 599058
+    },
+    "bert/encoder/layer_9/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.00028133392333984375,
+      "changed_values": 164667
+    },
+    "bert/encoder/layer_10/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.0013885498046875,
+      "changed_values": 166235
+    },
+    "bert/encoder/layer_10/intermediate/dense/BiasAdd": {
+      "max_abs": 0.0005664825439453125,
+      "changed_values": 630500
+    },
+    "bert/encoder/layer_10/intermediate/dense/Tanh": {
+      "max_abs": 4.509091377258301e-05,
+      "changed_values": 513205
+    },
+    "bert/encoder/layer_10/intermediate/dense/mul_3": {
+      "max_abs": 0.0005664825439453125,
+      "changed_values": 610588
+    },
+    "bert/encoder/layer_10/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.00020551681518554688,
+      "changed_values": 166500
+    },
+    "bert/encoder/layer_11/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.0009365081787109375,
+      "changed_values": 166442
+    },
+    "bert/encoder/layer_11/intermediate/dense/BiasAdd": {
+      "max_abs": 0.00011777877807617188,
+      "changed_values": 640693
+    },
+    "bert/encoder/layer_11/intermediate/dense/Tanh": {
+      "max_abs": 4.83393669128418e-05,
+      "changed_values": 573740
+    },
+    "bert/encoder/layer_11/intermediate/dense/mul_3": {
+      "max_abs": 0.000118255615234375,
+      "changed_values": 610666
+    },
+    "bert/encoder/layer_11/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.0002980232238769531,
+      "changed_values": 166841
+    },
+    "pooled_output": {
+      "max_abs": 1.049041748046875e-05,
+      "changed_values": 5916
+    }
+  },
+  "mixed8": {
+    "bert/embeddings/add": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/add_1": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/LayerNorm/moments/mean": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/LayerNorm/moments/variance": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/LayerNorm/batchnorm/add": {
+      "max_abs": 0.0,
+      "changed_values": 0
+    },
+    "bert/embeddings/LayerNorm/batchnorm/Rsqrt": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 3
+    },
+    "bert/embeddings/LayerNorm/batchnorm/mul": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 1966
+    },
+    "bert/embeddings/LayerNorm/batchnorm/mul_1": {
+      "max_abs": 4.76837158203125e-07,
+      "changed_values": 1715
+    },
+    "bert/embeddings/LayerNorm/batchnorm/mul_2": {
+      "max_abs": 7.450580596923828e-09,
+      "changed_values": 1749
+    },
+    "bert/embeddings/LayerNorm/batchnorm/sub": {
+      "max_abs": 2.9802322387695312e-08,
+      "changed_values": 1199
+    },
+    "bert/embeddings/LayerNorm/batchnorm/add_1": {
+      "max_abs": 4.76837158203125e-07,
+      "changed_values": 1485
+    },
+    "bert/encoder/layer_0/attention/self/query/MatMul": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 1837
+    },
+    "bert/encoder/layer_0/attention/self/key/MatMul": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 1814
+    },
+    "bert/encoder/layer_0/attention/self/value/MatMul": {
+      "max_abs": 4.76837158203125e-07,
+      "changed_values": 1887
+    },
+    "bert/encoder/layer_0/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 13410
+    },
+    "bert/encoder/layer_0/intermediate/dense/BiasAdd": {
+      "max_abs": 2.86102294921875e-06,
+      "changed_values": 58573
+    },
+    "bert/encoder/layer_0/intermediate/dense/Tanh": {
+      "max_abs": 1.7285346984863281e-06,
+      "changed_values": 39150
+    },
+    "bert/encoder/layer_0/intermediate/dense/mul_3": {
+      "max_abs": 1.9371509552001953e-06,
+      "changed_values": 53930
+    },
+    "bert/encoder/layer_0/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 9.5367431640625e-07,
+      "changed_values": 18237
+    },
+    "bert/encoder/layer_1/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 19138
+    },
+    "bert/encoder/layer_1/intermediate/dense/BiasAdd": {
+      "max_abs": 1.1444091796875e-05,
+      "changed_values": 71403
+    },
+    "bert/encoder/layer_1/intermediate/dense/Tanh": {
+      "max_abs": 2.086162567138672e-06,
+      "changed_values": 50957
+    },
+    "bert/encoder/layer_1/intermediate/dense/mul_3": {
+      "max_abs": 1.1444091796875e-05,
+      "changed_values": 67155
+    },
+    "bert/encoder/layer_1/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.9073486328125e-06,
+      "changed_values": 19669
+    },
+    "bert/encoder/layer_2/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 19771
+    },
+    "bert/encoder/layer_2/intermediate/dense/BiasAdd": {
+      "max_abs": 6.67572021484375e-06,
+      "changed_values": 74045
+    },
+    "bert/encoder/layer_2/intermediate/dense/Tanh": {
+      "max_abs": 1.817941665649414e-06,
+      "changed_values": 55713
+    },
+    "bert/encoder/layer_2/intermediate/dense/mul_3": {
+      "max_abs": 2.5033950805664062e-06,
+      "changed_values": 70844
+    },
+    "bert/encoder/layer_2/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.9073486328125e-06,
+      "changed_values": 20080
+    },
+    "bert/encoder/layer_3/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 20192
+    },
+    "bert/encoder/layer_3/intermediate/dense/BiasAdd": {
+      "max_abs": 5.7220458984375e-06,
+      "changed_values": 75332
+    },
+    "bert/encoder/layer_3/intermediate/dense/Tanh": {
+      "max_abs": 1.994892954826355e-06,
+      "changed_values": 56581
+    },
+    "bert/encoder/layer_3/intermediate/dense/mul_3": {
+      "max_abs": 2.86102294921875e-06,
+      "changed_values": 71688
+    },
+    "bert/encoder/layer_3/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.9073486328125e-06,
+      "changed_values": 20320
+    },
+    "bert/encoder/layer_4/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.52587890625e-05,
+      "changed_values": 20384
+    },
+    "bert/encoder/layer_4/intermediate/dense/BiasAdd": {
+      "max_abs": 7.62939453125e-06,
+      "changed_values": 76283
+    },
+    "bert/encoder/layer_4/intermediate/dense/Tanh": {
+      "max_abs": 2.0116567611694336e-06,
+      "changed_values": 58485
+    },
+    "bert/encoder/layer_4/intermediate/dense/mul_3": {
+      "max_abs": 3.814697265625e-06,
+      "changed_values": 72689
+    },
+    "bert/encoder/layer_4/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 3.814697265625e-06,
+      "changed_values": 20421
+    },
+    "bert/encoder/layer_5/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 9.5367431640625e-06,
+      "changed_values": 20456
+    },
+    "bert/encoder/layer_5/intermediate/dense/BiasAdd": {
+      "max_abs": 5.245208740234375e-06,
+      "changed_values": 76797
+    },
+    "bert/encoder/layer_5/intermediate/dense/Tanh": {
+      "max_abs": 2.3543834686279297e-06,
+      "changed_values": 59876
+    },
+    "bert/encoder/layer_5/intermediate/dense/mul_3": {
+      "max_abs": 2.9802322387695312e-06,
+      "changed_values": 73260
+    },
+    "bert/encoder/layer_5/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.9073486328125e-06,
+      "changed_values": 20511
+    },
+    "bert/encoder/layer_6/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 3.814697265625e-06,
+      "changed_values": 20499
+    },
+    "bert/encoder/layer_6/intermediate/dense/BiasAdd": {
+      "max_abs": 5.7220458984375e-06,
+      "changed_values": 77217
+    },
+    "bert/encoder/layer_6/intermediate/dense/Tanh": {
+      "max_abs": 3.069639205932617e-06,
+      "changed_values": 61665
+    },
+    "bert/encoder/layer_6/intermediate/dense/mul_3": {
+      "max_abs": 3.3974647521972656e-06,
+      "changed_values": 73594
+    },
+    "bert/encoder/layer_6/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 2.86102294921875e-06,
+      "changed_values": 20585
+    },
+    "bert/encoder/layer_7/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.52587890625e-05,
+      "changed_values": 20603
+    },
+    "bert/encoder/layer_7/intermediate/dense/BiasAdd": {
+      "max_abs": 6.9141387939453125e-06,
+      "changed_values": 78078
+    },
+    "bert/encoder/layer_7/intermediate/dense/Tanh": {
+      "max_abs": 5.509704351425171e-06,
+      "changed_values": 62780
+    },
+    "bert/encoder/layer_7/intermediate/dense/mul_3": {
+      "max_abs": 6.4373016357421875e-06,
+      "changed_values": 74804
+    },
+    "bert/encoder/layer_7/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 3.814697265625e-06,
+      "changed_values": 20622
+    },
+    "bert/encoder/layer_8/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 1.33514404296875e-05,
+      "changed_values": 20612
+    },
+    "bert/encoder/layer_8/intermediate/dense/BiasAdd": {
+      "max_abs": 3.1948089599609375e-05,
+      "changed_values": 78300
+    },
+    "bert/encoder/layer_8/intermediate/dense/Tanh": {
+      "max_abs": 1.6614794731140137e-05,
+      "changed_values": 63581
+    },
+    "bert/encoder/layer_8/intermediate/dense/mul_3": {
+      "max_abs": 3.266334533691406e-05,
+      "changed_values": 75368
+    },
+    "bert/encoder/layer_8/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 4.38690185546875e-05,
+      "changed_values": 20579
+    },
+    "bert/encoder/layer_9/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.00014209747314453125,
+      "changed_values": 20688
+    },
+    "bert/encoder/layer_9/intermediate/dense/BiasAdd": {
+      "max_abs": 0.00014400482177734375,
+      "changed_values": 78777
+    },
+    "bert/encoder/layer_9/intermediate/dense/Tanh": {
+      "max_abs": 7.88271427154541e-05,
+      "changed_values": 64949
+    },
+    "bert/encoder/layer_9/intermediate/dense/mul_3": {
+      "max_abs": 0.00016033649444580078,
+      "changed_values": 76166
+    },
+    "bert/encoder/layer_9/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.000415802001953125,
+      "changed_values": 20744
+    },
+    "bert/encoder/layer_10/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.002044677734375,
+      "changed_values": 21317
+    },
+    "bert/encoder/layer_10/intermediate/dense/BiasAdd": {
+      "max_abs": 0.0008258819580078125,
+      "changed_values": 84082
+    },
+    "bert/encoder/layer_10/intermediate/dense/Tanh": {
+      "max_abs": 6.663799285888672e-05,
+      "changed_values": 74691
+    },
+    "bert/encoder/layer_10/intermediate/dense/mul_3": {
+      "max_abs": 0.0008258819580078125,
+      "changed_values": 82774
+    },
+    "bert/encoder/layer_10/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.00030100345611572266,
+      "changed_values": 21281
+    },
+    "bert/encoder/layer_11/attention/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.0013713836669921875,
+      "changed_values": 21320
+    },
+    "bert/encoder/layer_11/intermediate/dense/BiasAdd": {
+      "max_abs": 0.00017404556274414062,
+      "changed_values": 84260
+    },
+    "bert/encoder/layer_11/intermediate/dense/Tanh": {
+      "max_abs": 7.179379463195801e-05,
+      "changed_values": 80556
+    },
+    "bert/encoder/layer_11/intermediate/dense/mul_3": {
+      "max_abs": 0.00017452239990234375,
+      "changed_values": 82550
+    },
+    "bert/encoder/layer_11/output/LayerNorm/batchnorm/add_1": {
+      "max_abs": 0.0004367828369140625,
+      "changed_values": 21314
+    },
+    "pooled_output": {
+      "max_abs": 1.52587890625e-05,
+      "changed_values": 764
+    }
+  }
+}

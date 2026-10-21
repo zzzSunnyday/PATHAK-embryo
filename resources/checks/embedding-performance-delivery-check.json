@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-21T17:45:08.059406+00:00",
+  "default_model": "models/sent_biobert_pubmed_base_cased_parallel_masked_mean_cpu8",
+  "config": [
+    16,
+    8,
+    40,
+    8
+  ],
+  "sentence_max_intra": 2,
+  "OMP_NUM_THREADS": 2,
+  "batch": 16,
+  "protocol": "masked_mean_parallel_sentence_v1",
+  "published_postcheck": "passed",
+  "full_library_batches": [
+    1,
+    8,
+    16
+  ],
+  "full_library_max_abs": 0.0,
+  "end_to_end_speedup": 2.871998733327809,
+  "baseline_preserved": true,
+  "protected_research_files": {
+    "docs/00_mouse_embryo_pathak_PLAN.md": true,
+    "docs/01_mouse_embryo_pathak_resources_PROGRESS.md": true,
+    "config/project.json": true,
+    "environment.yml": true
+  },
+  "report_links_verified": true,
+  "notebook_code_syntax": "passed",
+  "benchmark_entry_prepare_check": "passed",
+  "files_sha256": {
+    "pathak_runtime.py": "87c5e3b7ef43a7deacb2b28730ebb687785e333817c08850969c8d4b85254038",
+    "BIOBERT_PERFORMANCE_REPORT.md": "626c40538748347f6f84ab00b7345cd8d15a05cd86ff4c798210434e1fa491d9",
+    "BIOBERT_FIX_REPORT.md": "c259320dba6fd6133fb311122d2f1f4b18b2155570dca6ee89c24f6a330f6b71",
+    "README.md": "d826e20889541774f46c74d429142340741da633f08dfb98addd109664b636de",
+    "docs/02_mouse_embryo_pathak_analysis_PROGRESS.md": "85ebc1043421cd846f2033dac062d7dcdd86e94cbe85fec6f90d4087a5c9219b",
+    "tutorials/local_2_GO_term_embedding.ipynb": "33cdc88571c3cb66276b6e44903b56681ab82d2b1e7c9da6127b8d9db9fb21dc",
+    "tutorials/local_3_PhenoMiner_plant.ipynb": "f8f08c6493324848002fbee6a09b91b6e3c23dd6109d1b11f03d8ac329c0fe11",
+    "tutorials/embedding_manifest.json": "0f8e5f39bc573ce457e127becdbffd87a32dc201b8e66335c8b46aca547690f4",
+    "tutorials/predictions_full_BP.pickle": "0ca1b5b52d66aafce2181e7c135f82cd3f255376a40f9d486042594e21e55896",
+    "resources/checks/check_biobert_parallel_batching.py": "1172befabb02830d26bb16f56c736834c70e27880d0454050a73986e967beeff",
+    "resources/checks/embedding-performance-global8.json": "78eab536a5daff04020e70a0970071248dadfd5542b796abcf4fa71fd59430f1",
+    "resources/checks/embedding-performance-global8-benchmark.json": "eb32fd0c3011edc92c7f5fdb85f8f9a2c3dd01295e7435bf49462c3c4b1922ae",
+    "resources/checks/embedding-performance-global8-validation.json": "f7eda8040e85facaf8209b8c8966e63111c82a3d8e701f4232ce393d44735ea1",
+    "resources/checks/benchmark_biobert_global8.py": "f93399f3801a0a5f740b990ca850b29328af712f00ab7c96f7105dc4c51bb072"
+  }
+}

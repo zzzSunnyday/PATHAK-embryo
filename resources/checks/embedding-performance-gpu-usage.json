@@ -1,0 +1,7 @@
+{
+  "cpu_benchmark_gpu0_max_util_percent": 0.0,
+  "gpu0_diagnostic_window_max_util_percent": 19.0,
+  "gpu0_diagnostic_window_max_memory_mib": 959.0,
+  "gpu0_diagnostic_window_max_power_w": 86.43,
+  "note": "Diagnostic maxima include failed BioBERT attempts and the standalone MatMul test; they are not steady BioBERT resource estimates."
+}

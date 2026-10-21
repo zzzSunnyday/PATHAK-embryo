@@ -1,18 +1,21 @@
-# PATHAK
-NLP-based method to mine gene and function relationships from published articles.
+# PATHAK 本地教学与 BioBERT 编码
 
-<img src="https://nilesh-iiita.github.io/PATHAK/_static/PATHAK.png" alt="PATHAK" width="200" height="220" title="PATHAK">
+基于 [PATHAK](https://github.com/nilesh-iiita/PATHAK) 的本地环境与方法教学，保留植物示例，并提供经过严格数值验收的 BioBERT 批量编码。
+`local-teaching` 维护通用运行环境、教学和编码工具；`research/mouse-embryo` 继承这些修复并继续小鼠胚胎研究。
 
+## 当前工作入口
 
-[Demo](https://nilesh-iiita.github.io/PATHAK/intro.html)
+- [环境与模型检查](tutorials/local_0_environment_check.ipynb)
+- [GO 语料准备](tutorials/local_1_GO.ipynb)
+- [GO 定义向量](tutorials/local_2_GO_term_embedding.ipynb)
+- [植物示例文献处理](tutorials/local_3_PhenoMiner_plant.ipynb)
+- [BioBERT 模型身份](config/biobert_model.json)
+- [编码检查和报告](resources/checks/README.md)
 
-## Summary 
-
-Understanding gene function is crucial for advancing our knowledge of biological systems and developing new treatments for diseases. However, it is a complex and challenging task due to the complexity of biological systems, the constantly evolving understanding of gene function, and the specialized language used in research articles. To address this, the authors propose PATHAK, a new method that uses a pre-trained Transformer language model to identify relationships between genes and their potential GO term definition. They applied this method to a large dataset of papers on Arabidopsis thaliana and hope to continue exploring its potential applications in advancing our understanding of gene function and facilitating the discovery of new treatments for diseases.
 
 ## stage3 环境与教学
 
-项目目录为 /root/gpufree-data/PATHAK，Conda 环境名为 pathak。教学 Notebook 及生成内容统一保存在 tutorials/。模型位于 models/，运行资源位于 resources/。
+项目目录为 /root/gpufree-data/PATHAK，Conda 环境名为 pathak。本地环境检查与植物教学保存在 tutorials/，模型和分句资源位于 models/，Java 运行库及校验工具位于 resources/。
 
 ### 1. 软件环境
 
@@ -51,38 +54,31 @@ PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple/ \
 
 ```text
 PATHAK/
-├── environment.yml
 ├── README.md
+├── environment.yml
 ├── pathak_runtime.py
+├── config/
+│   └── biobert_model.json
+├── data/
+│   └── go/go.obo
 ├── tutorials/
 │   ├── local_0_environment_check.ipynb
 │   ├── local_1_GO.ipynb
 │   ├── local_2_GO_term_embedding.ipynb
 │   ├── local_3_PhenoMiner_plant.ipynb
-│   ├── GO_BP_Ontology_corups.tsv
-│   ├── GO_BP_Ontology_corups_Filtered.tsv
-│   ├── predictions_full_BP.pickle
-│   └── pipe_full_BP/
-├── data/go/go.obo
-├── Auxiliary_Files/
-│   ├── TAIR_GOTERMS.txt
-│   └── 1.2_ATH_Gene_all.lst
-├── Example_data/
-│   ├── PMC1459476.xml
-│   └── PMC1802096.xml
+│   ├── Auxiliary_Files/                # 植物教学词典
+│   ├── Example_data/                   # 植物教学示例 XML
+│   └── ...                             # 既有教学输出
 ├── models/
-│   ├── sent_biobert_pubmed_base_cased/
-│   │   ├── bert_sentence_tensorflow
-│   │   ├── fields/vocabulary/
-│   │   └── metadata/
-│   └── biobert-source.json
+│   ├── biobert_pubmed_sentence/         # 唯一正式 BioBERT 模型
+│   └── nltk_data/                       # 本地 NLTK punkt 分句资源
+├── .backups/biobert-models/             # 原模型、CPU2 基线及未采用候选；本地保留
 └── resources/
-    ├── jars/spark-nlp-assembly-4.0.2.jar
-    ├── nltk_data/tokenizers/punkt/
-    ├── archives/punkt.zip
+    ├── jars/
     ├── local-assets-manifest.json
     ├── SHA256SUMS
     └── checks/
+        └── reports/                    # BioBERT 修复与性能报告
 ```
 
 ### 3. 本地输入资源
@@ -90,17 +86,20 @@ PATHAK/
 | 资源 | 项目内路径 | 用途 |
 | --- | --- | --- |
 | GO 本体 | data/go/go.obo | GO 名称、定义和关系 |
-| BioBERT | models/sent_biobert_pubmed_base_cased/ | 768 维、区分大小写的句向量模型 |
+| BioBERT | models/biobert_pubmed_sentence/ | 768 维、区分大小写、图内 masked mean 的批量模型 |
 | Spark NLP JAR | resources/jars/spark-nlp-assembly-4.0.2.jar | Java 运行库 |
-| NLTK punkt | resources/nltk_data/ | 论文分句 |
-| TAIR GO 列表 | Auxiliary_Files/TAIR_GOTERMS.txt | 第二课的拟南芥 GO 筛选 |
-| 拟南芥基因词典 | Auxiliary_Files/1.2_ATH_Gene_all.lst | 第三课基因名称匹配 |
-| 示例论文 | Example_data/ | 本地 XML 输入 |
+| NLTK punkt | models/nltk_data/ | 论文分句 |
+| TAIR GO 列表 | tutorials/Auxiliary_Files/TAIR_GOTERMS.txt | 第二课的拟南芥 GO 筛选 |
+| 拟南芥基因词典 | tutorials/Auxiliary_Files/1.2_ATH_Gene_all.lst | 第三课基因名称匹配 |
+| 示例论文 | tutorials/Example_data/ | 本地 XML 输入 |
 
-BioBERT 使用完整目录：bert_sentence_tensorflow 是模型文件，fields/vocabulary/ 是词表，metadata/ 是加载配置。模型来源见 models/biobert-source.json。load_biobert() 从本地目录读取，缺少模型文件时会报错。
+NLTK 的 punkt 分句资源保存在 models/nltk_data/，由 pathak_runtime.configure() 和 Python (pathak) 内核设置 NLTK_DATA 后读取。Spark NLP JAR 保存在 resources/jars/，由 Spark 从本地加载。这两项资源均已在项目内保存，运行时无需重新下载。目录迁移后，已打开的 Notebook 请重启内核并重新执行启动单元。
+
+BioBERT 使用完整目录：bert_sentence_tensorflow 是模型文件，fields/vocabulary/ 是词表，metadata/ 是加载配置。模型来源见 config/biobert_model.json。load_biobert() 从本地目录读取，缺少模型文件时会报错。
 
 ```python
-MODEL_PATH = PROJECT_ROOT / "models" / "sent_biobert_pubmed_base_cased"
+from pathak_runtime import BIOBERT_PATH
+MODEL_PATH = BIOBERT_PATH
 pipe = load_biobert(model_path=MODEL_PATH)
 ```
 
@@ -125,7 +124,7 @@ python -m ipykernel install \
   --env PYSPARK_PYTHON "$CONDA_PREFIX/bin/python" \
   --env PYSPARK_DRIVER_PYTHON "$CONDA_PREFIX/bin/python" \
   --env SPARK_LOCAL_IP "127.0.0.1" \
-  --env NLTK_DATA "/root/gpufree-data/PATHAK/resources/nltk_data"
+  --env NLTK_DATA "/root/gpufree-data/PATHAK/models/nltk_data"
 ```
 
 选择 Python (pathak) 内核。pathak_runtime.py 配置 Java、Python 和资源路径，Spark 使用 CPU、local[2]、8 GB 驱动内存。
@@ -139,7 +138,9 @@ TUTORIALS_ROOT = PROJECT_ROOT / "tutorials"
 
 模型、GO 本体、词典和论文从 PROJECT_ROOT 读取；教学的 GO 表、向量 pickle、处理流水线和临时日志从 TUTORIALS_ROOT 读写。文件引用不依赖 Jupyter 的启动目录。
 
-### 5. 教学顺序
+### 5. 原有植物教学顺序
+
+以下教学用于理解上游方法和验证本地文献编码流程。
 
 | 顺序 | Notebook | 主要输入 | 生成内容（tutorials/） |
 | --- | --- | --- | --- |
@@ -197,4 +198,13 @@ timeout=-1 表示不限制单个单元格的运行时间。输出文件名中的
 
 Java 类加载失败时，重启内核并从启动单元开始；WARN NativeCodeLoader 在已验证的本地运行中不影响计算。
 
-当前编码一致性检查发现批处理差异：单句重编码与已保存批量向量不完全一致，批量输入可重现抽查向量。正式分析前需统一并验证编码方式、校准阈值。记录见 resources/checks/tutorials-embedding-consistency.json。
+当前正式模型为 models/biobert_pubmed_sentence/，协议 masked_mean_parallel_sentence_v1，默认 batchSize=16。全新 JVM 全局 intra-op=8、inter-op=8，句内上限 2、OMP=2；图、权重及单句运算顺序保留。batch1/8/16 全部 5,117 × 768 数值均与旧单句库相等，最大绝对差 0。固定 785 条 GO/文献混合语料的三轮端到端中位 36.350 → 12.657 秒，约 2.872 倍，平均活跃核约 2.46 → 9.11。完整向量、保存管线和 manifest 已更新；已有内核需重启并重新加载向量及模型。详见 [resources/checks/reports/BIOBERT_PERFORMANCE_REPORT.md](resources/checks/reports/BIOBERT_PERFORMANCE_REPORT.md) 和 [验收记录](resources/checks/embedding-performance-global8-validation.json)。原始模型、CPU2 稳定版和旧产物均保留，正式依赖版本及 CPU 数据未变。
+
+复核正式产物：
+
+```bash
+/opt/conda/envs/pathak/bin/python resources/checks/check_embedding_batch_invariance.py
+/opt/conda/envs/pathak/bin/python resources/checks/check_biobert_parallel_batching.py
+```
+
+BioBERT 检查入口和证据说明见 [resources/checks/README.md](resources/checks/README.md)；修复与性能报告统一保存在 resources/checks/reports/。历史模型移到 .backups/biobert-models/，生产加载不依赖该备份目录。

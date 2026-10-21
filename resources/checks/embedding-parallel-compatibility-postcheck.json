@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-21T15:52:34.698854+00:00",
+  "rows": 5117,
+  "dimension": 768,
+  "protocol": "masked_mean_parallel_sentence_v1",
+  "saved_internal_batch_sizes": [
+    16
+  ],
+  "sample_indices": [
+    0,
+    1,
+    7,
+    15,
+    101,
+    388,
+    647,
+    1365,
+    2558,
+    4564,
+    5116
+  ],
+  "max_absolute_errors": {
+    "list_vs_series": 0.0,
+    "order_invariance": 0.0,
+    "single_vs_mixed": 0.0,
+    "single_vs_repeated": 0.0,
+    "single_vs_long_context": 0.0,
+    "fresh_process_vs_saved": 0.0
+  },
+  "self_query_cosines": [
+    0.9999999999999999,
+    1.0,
+    1.0,
+    1.0,
+    0.9999999999999999,
+    1.0000000000000002,
+    1.0000000000000002,
+    1.0000000000000002,
+    1.0000000000000002,
+    0.9999999999999999,
+    0.9999999999999999
+  ],
+  "maximum_absolute_error": 0.0
+}

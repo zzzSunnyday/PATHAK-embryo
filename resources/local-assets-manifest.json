@@ -1,0 +1,381 @@
+{
+  "updated_utc": "2026-10-21T18:06:02.073949+00:00",
+  "root": "/root/gpufree-data/PATHAK",
+  "verification": "SHA256 of current local runtime assets",
+  "model_path": "models/biobert_pubmed_sentence",
+  "official_model_url": "https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_pubmed_base_cased_en_2.6.2_2.4_1600449483871.zip",
+  "official_jar_url": "https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/jars/spark-nlp-assembly-4.0.2.jar",
+  "files": [
+    {
+      "path": "models/biobert_pubmed_sentence/bert_sentence_tensorflow",
+      "bytes": 401606780,
+      "sha256": "3583a8f750a8891440c1338a46399a9f18a2fc60f5db113506183e0a83c4161b"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/._SUCCESS.crc",
+      "bytes": 8,
+      "sha256": "1d44f510ec2ed7595badbec80583316defc14e8dd89130d719724149adfaa07d"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00000.crc",
+      "bytes": 836,
+      "sha256": "8279d070db7bc3eeeb247745a71ed8a7cde3d38632429fbd7b57b2b96f3dca02"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00001.crc",
+      "bytes": 832,
+      "sha256": "498898f1f7f8a53a658ea4c35a44596d13cb502784e232b674f6be77c93c01de"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00002.crc",
+      "bytes": 832,
+      "sha256": "a8c91f6c50b8a9d1ed5b58c88acf2f66f4be5e987f8566bcc74deff1712b5ca3"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00003.crc",
+      "bytes": 836,
+      "sha256": "5c98965e4db682f5a9e427c80e6ac52676614d36e1b50ad704405eb91ce21c79"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00004.crc",
+      "bytes": 836,
+      "sha256": "72c474be3071e2d84704f17ac603b078ab7b649671a3b6a4fc8f5c2ce9ce45fd"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00005.crc",
+      "bytes": 832,
+      "sha256": "6c31a7756758b1982bd065ae197b1b3ea9dbc760afd9698a26946dfa8aae66f9"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00006.crc",
+      "bytes": 836,
+      "sha256": "8680c6e2266e562b0bf24b79819ae9d31c49a2d2dba0f2bb96436879a015f5cd"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00007.crc",
+      "bytes": 832,
+      "sha256": "9cc2bd53328828d2957ee5d7077ec807b921cab8d37c52a3de9e114d73db8969"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00008.crc",
+      "bytes": 832,
+      "sha256": "f5b967fdc0c81d37fd63915b8b16984ffd68b947ad7d04c342d4f289e7e70732"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00009.crc",
+      "bytes": 832,
+      "sha256": "77049bc60247513e98fb732eec73ffec1d47c0674c1da37078979576fe211316"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00010.crc",
+      "bytes": 832,
+      "sha256": "0c121fd65406196d0ab6f0b0569e4b0dfe54c75b8d5a47f279107648abd87b14"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/.part-00011.crc",
+      "bytes": 832,
+      "sha256": "4d55590b14efe66a0fd648fab14e3616eb02fafaa3563c7858109a259b606d7f"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/_SUCCESS",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00000",
+      "bytes": 105610,
+      "sha256": "f218cb4ffbeac715389952259bf5c5f6bb0e03ade9d3d768f669855dc4c407fd"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00001",
+      "bytes": 105296,
+      "sha256": "a353d9dc53c468a8b7d79b84ccbefe92d8ebb81322eb5525f144f121ed4e24c5"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00002",
+      "bytes": 105355,
+      "sha256": "b9f035ae144fc3cb57cc3633b85bbb5937a648a94c47b70a79c15cafd69d5214"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00003",
+      "bytes": 105542,
+      "sha256": "4b97f09ce26da8a0a0570c43cb268281eaa91df99b0e4fb7f540acf2a0ee2ca0"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00004",
+      "bytes": 105579,
+      "sha256": "e4704aa109b0148b028159092c22e806a9d686aecfe812458ba3e9621ded3bfc"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00005",
+      "bytes": 105365,
+      "sha256": "2da7181fc6d275b7daff85012153b71776f565c55a6dfe8beae3208e5cb866fd"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00006",
+      "bytes": 105600,
+      "sha256": "dd815659e8e2137ba20753286c8d1f23e46250c97b271a76bb91c46c8de29ca9"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00007",
+      "bytes": 105052,
+      "sha256": "6ccda3af9af608b42ec15eaf244f36978d49797b21e0116e8c225c8acb20606c"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00008",
+      "bytes": 105344,
+      "sha256": "6a304d0b11e8d941c1349323742e2ae5e9e19bbdaa0f7fa3c5a2048bf084e1f3"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00009",
+      "bytes": 105419,
+      "sha256": "bc6ae8e74e49fe5002b37c51ba0d9c62979c538ed77ce314b624f3227abad5b5"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00010",
+      "bytes": 105466,
+      "sha256": "f40ba15734424ec152f35fc31fb74358f06d8eda5cc6bc46d6b2454b24aa1a53"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/fields/vocabulary/part-00011",
+      "bytes": 105322,
+      "sha256": "a78cce3ffee499bb7cfcef2e07627a5bb5185fea1f4bcde607b1f6873f2400fe"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/metadata/._SUCCESS.crc",
+      "bytes": 8,
+      "sha256": "1d44f510ec2ed7595badbec80583316defc14e8dd89130d719724149adfaa07d"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/metadata/_SUCCESS",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/metadata/part-00000",
+      "bytes": 537,
+      "sha256": "a945ec990d0edf1773a90e40ace14cf298db038c318d8a87df63dd063c4f6763"
+    },
+    {
+      "path": "models/biobert_pubmed_sentence/pathak_pooling.json",
+      "bytes": 4685,
+      "sha256": "1b9042efb8dd47cdb393cacb3035bb670c2e83479d1717544762caa66c960c13"
+    },
+    {
+      "path": "resources/jars/spark-nlp-assembly-4.0.2.jar",
+      "bytes": 588929807,
+      "sha256": "52d43a95dbc01eafab3748a173ff816e76637f364e7a04975d136e58d28d4a42"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/.DS_Store",
+      "bytes": 6148,
+      "sha256": "24344a0387309358be715e1b803ec962c9a0800fd7b60a2492a681db81f91873"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/README",
+      "bytes": 8574,
+      "sha256": "d3251cae66a9359bd68c039e3a46172a05ca9df0b27dcdfa23ae594d68d27ec4"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/czech.pickle",
+      "bytes": 1119050,
+      "sha256": "64b0734b6fbe8e8d7cac79f48d1dd9f853824e57c4e3594dadd74ba2c1d97f50"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/danish.pickle",
+      "bytes": 1191710,
+      "sha256": "6189c7dd254e29e2bd406a7f6a4336297c8953214792466a790ea4444223ceb3"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/dutch.pickle",
+      "bytes": 693759,
+      "sha256": "fda0d6a13f02e8898daec7fe923da88e25abe081bcfa755c0e015075c215fe4c"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/english.pickle",
+      "bytes": 406697,
+      "sha256": "5cad3758596392364e3be9803dbd7ebeda384b68937b488a01365f5551bb942c"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/estonian.pickle",
+      "bytes": 1499502,
+      "sha256": "b364f72538d17b146a98009ad239a8096ce6c0a8b02958c0bc776ecd0c58a25f"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/finnish.pickle",
+      "bytes": 1852226,
+      "sha256": "6a4b5ff5500ee851c456f9dd40d5fc0d8c1859c88eb3178de1317d26b7d22833"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/french.pickle",
+      "bytes": 553575,
+      "sha256": "28e3a4cd2971989b3cb9fd3433a6f15d17981e464db2be039364313b5de94f29"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/german.pickle",
+      "bytes": 1463575,
+      "sha256": "ddcbbe85e2042a019b1a6e37fd8c153286c38ba201fae0f5bfd9a3f74abae25c"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/greek.pickle",
+      "bytes": 876006,
+      "sha256": "85dabc44ab90a5f208ef37ff6b4892ebe7e740f71fb4da47cfd95417ca3e22fd"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/italian.pickle",
+      "bytes": 615089,
+      "sha256": "68a94007b1e4ffdc4d1a190185ca5442c3dafeb17ab39d30329e84cd74a43947"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/malayalam.pickle",
+      "bytes": 221207,
+      "sha256": "1f8cf58acbdb7f472ac40affc13663be42dafb47c15030c11ade0444c9e0e53d"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/norwegian.pickle",
+      "bytes": 1181271,
+      "sha256": "4ff7a46d1438b311457d15d7763060b8d3270852c1850fd788c5cee194dc4a1d"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/polish.pickle",
+      "bytes": 1738386,
+      "sha256": "624900ae3ddfb4854a98c5d3b8b1c9bb719975f33fee61ce1441dab9f8a00718"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/portuguese.pickle",
+      "bytes": 611919,
+      "sha256": "02a0b7b25c3c7471e1791b66a31bbb530afbb0160aee4fcecf0107652067b4a1"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/russian.pickle",
+      "bytes": 33020,
+      "sha256": "549762f8190024d89b511472df21a3a135eee5d9233e63ac244db737c2c61d7e"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/slovene.pickle",
+      "bytes": 734444,
+      "sha256": "52ef2cc0ed27d79b3aa635cbbc40ad811883a75a4b8a8be1ae406972870fd864"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/spanish.pickle",
+      "bytes": 562337,
+      "sha256": "164a50fadc5a49f8ec7426eae11d3111ee752b48a3ef373d47745011192a5984"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/swedish.pickle",
+      "bytes": 979681,
+      "sha256": "b0f7d538bfd5266633b09e842cd92e9e0ac10f1d923bf211e1497972ddc47318"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/PY3/turkish.pickle",
+      "bytes": 1017038,
+      "sha256": "ae68ef5863728ac5332e87eb1f6bae772ff32a13a4caa2b01a5c68103e853c5b"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/README",
+      "bytes": 8574,
+      "sha256": "d3251cae66a9359bd68c039e3a46172a05ca9df0b27dcdfa23ae594d68d27ec4"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/czech.pickle",
+      "bytes": 1265552,
+      "sha256": "5ba73d293c7d7953956bcf02f3695ec5c1f0d527f2a3c38097f5593394fa1690"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/danish.pickle",
+      "bytes": 1264725,
+      "sha256": "ea29760a0a9197f52ca59e78aeafc5a6f55d05258faf7db1709b2b9eb321ef20"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/dutch.pickle",
+      "bytes": 742624,
+      "sha256": "4a8e26b3d68c45c38e594d19e2d5677447bfdcaa636d3b1e7acfed0e9272d73c"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/english.pickle",
+      "bytes": 433305,
+      "sha256": "dda37972ae88998a6fd3e3ec002697a6bd362b32d050fda7d7ca5276873092aa"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/estonian.pickle",
+      "bytes": 1596714,
+      "sha256": "3867fee26a36bdb197c64362aa13ac683f5f33fa4d0d225a5d56707582a55a1d"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/finnish.pickle",
+      "bytes": 1951656,
+      "sha256": "1a9e17b3d5b4df76345d812b8a65b1da0767eda5086eadcc11e625eef0942835"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/french.pickle",
+      "bytes": 583482,
+      "sha256": "de05f3d5647d3d2296626fb83f68428e4c6ad6e05a00ed4694c8bdc8f2f197ee"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/german.pickle",
+      "bytes": 1526714,
+      "sha256": "eab497fa085413130c8fd0fb13b929128930afe2f6a26ea8715c95df7088e97c"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/greek.pickle",
+      "bytes": 1953106,
+      "sha256": "21752a6762fad5cfe46fb5c45fad9a85484a0e8e81c67e6af6fb973cfc27d67c"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/italian.pickle",
+      "bytes": 658331,
+      "sha256": "dcb2717d7be5f26e860a92e05acf69b1123a5f4527cd7a269a9ab9e9e668c805"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/malayalam.pickle",
+      "bytes": 221207,
+      "sha256": "1f8cf58acbdb7f472ac40affc13663be42dafb47c15030c11ade0444c9e0e53d"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/norwegian.pickle",
+      "bytes": 1259779,
+      "sha256": "e4a97f8f9a03a0338dd746bcc89a0ae0f54ae43b835fa37d83e279e1ca794faf"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/polish.pickle",
+      "bytes": 2042451,
+      "sha256": "16127b6d10933427a3e90fb20e9be53e1fb371ff79a730c1030734ed80b90c92"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/portuguese.pickle",
+      "bytes": 649051,
+      "sha256": "bb01bf7c79a4eadc2178bbd209665139a0e4b38f2d1c44fef097de93955140e0"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/russian.pickle",
+      "bytes": 33027,
+      "sha256": "bc984432fbe31f7000014f8047502476889169c60f09be5413ca09276b16c909"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/slovene.pickle",
+      "bytes": 832867,
+      "sha256": "7dac650212b3787b39996c01bd2084115493e6f6ec390bab61f767525b08b8ea"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/spanish.pickle",
+      "bytes": 597831,
+      "sha256": "271dc6027c4aae056f72a9bfab5645cf67e198bf4f972895844e40f5989ccdc3"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/swedish.pickle",
+      "bytes": 1034496,
+      "sha256": "40d50ebdad6caa87715f2e300b1217ec92c42de205a543cc4a56903bd2c9acfa"
+    },
+    {
+      "path": "models/nltk_data/tokenizers/punkt/turkish.pickle",
+      "bytes": 1225013,
+      "sha256": "d3ae47d76501d027698809d12e75292c9c392910488543342802f95db9765ccc"
+    }
+  ],
+  "model_record": "config/biobert_model.json",
+  "excluded_missing_download_archive": {
+    "path": "resources/archives/punkt.zip",
+    "reason": "Previously absent download archive; extracted models/nltk_data is present and remains verified",
+    "original_sha256": "51c3078994aeaf650bfc8e028be4fb42b4a0d177d41c012b6a983979653660ec"
+  }
+}

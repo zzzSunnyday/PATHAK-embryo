@@ -1,0 +1,93 @@
+{
+  "status": "failed",
+  "checked_utc": "2026-10-21T10:13:25.851064+00:00",
+  "rows": 5117,
+  "dimension": 768,
+  "internal_batch_size": 8,
+  "model_load_seconds": 6.570362109690905,
+  "warmup_32_seconds": 3.6811725087463856,
+  "encoding_seconds": 166.04133039712906,
+  "items_per_second": 30.817628284243593,
+  "row_alignment": "all 5117 normalized document strings match the corpus and original batch1 library",
+  "vs_original_batch1_max_abs": 1.52587890625e-05,
+  "vs_original_batch1_min_cosine": 0.9999999999961104,
+  "error_quantiles": [
+    0.0,
+    3.8743019104003906e-07,
+    9.5367431640625e-07,
+    1.9073486328125e-06,
+    1.52587890625e-05
+  ],
+  "worst_rows": [
+    {
+      "index": 4564,
+      "GO": "GO:0090558",
+      "max_abs": 1.52587890625e-05,
+      "cosine": 0.9999999999961104,
+      "text": "The process whose specific outcome is the progression of the plant epidermis over time, from its formation to the mature structure."
+    },
+    {
+      "index": 647,
+      "GO": "GO:0006303",
+      "max_abs": 1.239776611328125e-05,
+      "cosine": 0.999999999998146,
+      "text": "These in turn may further branch into sub-pathways, but evidence is still unclear."
+    },
+    {
+      "index": 388,
+      "GO": "GO:0005078",
+      "max_abs": 9.5367431640625e-06,
+      "cosine": 0.9999999999985143,
+      "text": "Binds multiple kinases of the MAPKKK cascade, and also upstream signaling proteins, permitting those molecules to function in a coordinated way."
+    },
+    {
+      "index": 1136,
+      "GO": "GO:0007186",
+      "max_abs": 8.58306884765625e-06,
+      "cosine": 0.9999999999993096,
+      "text": "The pathway begins with receptor-ligand interaction, and ends with regulation of a downstream cellular process."
+    },
+    {
+      "index": 4547,
+      "GO": "GO:0090436",
+      "max_abs": 8.58306884765625e-06,
+      "cosine": 0.9999999999986969,
+      "text": "The process whose specific outcome is the progression of an leaf pavement cell over time, from its formation to the mature structure."
+    },
+    {
+      "index": 1365,
+      "GO": "GO:0009555",
+      "max_abs": 5.7220458984375e-06,
+      "cosine": 0.999999999998758,
+      "text": "The process whose specific outcome is the progression of the pollen grain over time, from its formation to the mature structure."
+    },
+    {
+      "index": 2626,
+      "GO": "GO:0023052",
+      "max_abs": 5.7220458984375e-06,
+      "cosine": 0.9999999999997592,
+      "text": "This process begins with an active signal and ends when a cellular response has been triggered."
+    },
+    {
+      "index": 2615,
+      "GO": "GO:0022622",
+      "max_abs": 4.76837158203125e-06,
+      "cosine": 0.9999999999997213,
+      "text": "The process whose specific outcome is the progression of the root system over time, from its formation to the mature structure."
+    },
+    {
+      "index": 4535,
+      "GO": "GO:0090393",
+      "max_abs": 4.76837158203125e-06,
+      "cosine": 0.9999999999995778,
+      "text": "The process aimed at the progression of a sepal giant cell over time, from initial commitment of the cell to a specific fate, to the fully functional differentiated cell."
+    },
+    {
+      "index": 2109,
+      "GO": "GO:0015120",
+      "max_abs": 3.814697265625e-06,
+      "cosine": 0.9999999999995618,
+      "text": "Phosphoglycerates are important intermediates in glycolysis and 3-phosphoglycerate is a precursor in serine biosynthesis."
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-21T15:55:01.272331+00:00",
+  "server": "stage3",
+  "environment": "/opt/conda/envs/pathak",
+  "spark_nlp": "4.0.2",
+  "nlu": "4.0.0",
+  "java_tensorflow": "2.7.1",
+  "protocol": "masked_mean_parallel_sentence_v1",
+  "model_path": "models/sent_biobert_pubmed_base_cased_parallel_masked_mean",
+  "internal_batch_size": 16,
+  "tf_config_proto_bytes": [
+    16,
+    2,
+    40,
+    8
+  ],
+  "sentence_intra_threads": 2,
+  "thresholds": {
+    "max_abs": 1e-05,
+    "min_cosine": 0.999999
+  },
+  "full_library": {
+    "status": "passed",
+    "checked_utc": "2026-10-21T15:49:13.223563+00:00",
+    "thresholds": {
+      "max_abs": 1e-05,
+      "min_cosine": 0.999999
+    },
+    "reference_pickle_sha256": "0ca1b5b52d66aafce2181e7c135f82cd3f255376a40f9d486042594e21e55896",
+    "go_input_sha256": "3d872b81692702f966aa7241afa9b2be922d36b2ea8105832095431e99bc944f",
+    "results": [
+      {
+        "status": "passed",
+        "batch_size": 8,
+        "rows": 5117,
+        "dimension": 768,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999998,
+        "rejected_rows": 0,
+        "all_vector_elements_exactly_equal": true,
+        "encoding_seconds": 193.64536933600903,
+        "items_per_second": 26.42459263315044,
+        "row_alignment": "all rows passed",
+        "candidate_pickle": ".backups/biobert-layer-audit-20261021T150051Z/parallel_full/batch8.pickle",
+        "pickle_sha256": "49b2cdcb25de02b2b59a51f5fc96e6e78c575494ac15f58bb99a66874a75e9e4",
+        "failures": []
+      },
+      {
+        "status": "passed",
+        "batch_size": 16,
+        "rows": 5117,
+        "dimension": 768,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999998,
+        "rejected_rows": 0,
+        "all_vector_elements_exactly_equal": true,
+        "encoding_seconds": 195.94436530396342,
+        "items_per_second": 26.11455548651338,
+        "row_alignment": "all rows passed",
+        "candidate_pickle": ".backups/biobert-layer-audit-20261021T150051Z/parallel_full/batch16.pickle",
+        "pickle_sha256": "49b2cdcb25de02b2b59a51f5fc96e6e78c575494ac15f58bb99a66874a75e9e4",
+        "failures": []
+      }
+    ]
+  },
+  "validation_cases": 45,
+  "fresh_validation_cases": 3,
+  "fresh_publication_check": {
+    "status": "passed",
+    "checked_utc": "2026-10-21T15:52:16.899057+00:00",
+    "protocol": "masked_mean_parallel_sentence_v1",
+    "batch_size": 16,
+    "tf_config_proto_bytes": [
+      16,
+      2,
+      40,
+      8
+    ],
+    "case_count": 13,
+    "thresholds": {
+      "max_abs": 1e-05,
+      "min_cosine": 0.999999
+    },
+    "maximum_absolute_error": 0.0,
+    "minimum_cosine": 0.9999999999999998,
+    "comparisons": [
+      {
+        "case": "all_published_vectors_vs_legacy_single",
+        "rows": 5117,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999998,
+        "exact": true
+      },
+      {
+        "case": "raw_default_batch_vs_legacy",
+        "rows": 11,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999999,
+        "exact": true
+      },
+      {
+        "case": "raw_actual_single_0",
+        "rows": 1,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999999,
+        "exact": true
+      },
+      {
+        "case": "raw_actual_single_388",
+        "rows": 1,
+        "max_abs": 0.0,
+        "min_cosine": 1.0000000000000002,
+        "exact": true
+      },
+      {
+        "case": "raw_actual_single_647",
+        "rows": 1,
+        "max_abs": 0.0,
+        "min_cosine": 1.0000000000000002,
+        "exact": true
+      },
+      {
+        "case": "raw_actual_single_4564",
+        "rows": 1,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999999,
+        "exact": true
+      },
+      {
+        "case": "saved_default_batch_vs_legacy",
+        "rows": 11,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999999,
+        "exact": true
+      },
+      {
+        "case": "saved_series_nondefault_index",
+        "rows": 11,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999999,
+        "exact": true
+      },
+      {
+        "case": "saved_reversed_order",
+        "rows": 11,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999999,
+        "exact": true
+      },
+      {
+        "case": "saved_sensitive_repeated17",
+        "rows": 17,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999999,
+        "exact": true
+      },
+      {
+        "case": "saved_call_chunks_1_5_remainder",
+        "rows": 11,
+        "max_abs": 0.0,
+        "min_cosine": 0.9999999999999999,
+        "exact": true
+      },
+      {
+        "case": "raw_truncation_boundary_vs_original_single",
+        "rows": 5,
+        "max_abs": 0.0,
+        "min_cosine": 1.0,
+        "exact": true
+      },
+      {
+        "case": "saved_truncation_boundary_vs_original_single",
+        "rows": 5,
+        "max_abs": 0.0,
+        "min_cosine": 1.0,
+        "exact": true
+      }
+    ],
+    "manifest_verified": true,
+    "legacy_reference_pickle": ".backups/biobert-layer-audit-20261021T150051Z/before/tutorials/predictions_full_BP.pickle"
+  },
+  "compatibility_check": {
+    "status": "passed",
+    "checked_utc": "2026-10-21T15:52:34.698854+00:00",
+    "rows": 5117,
+    "dimension": 768,
+    "protocol": "masked_mean_parallel_sentence_v1",
+    "saved_internal_batch_sizes": [
+      16
+    ],
+    "sample_indices": [
+      0,
+      1,
+      7,
+      15,
+      101,
+      388,
+      647,
+      1365,
+      2558,
+      4564,
+      5116
+    ],
+    "max_absolute_errors": {
+      "list_vs_series": 0.0,
+      "order_invariance": 0.0,
+      "single_vs_mixed": 0.0,
+      "single_vs_repeated": 0.0,
+      "single_vs_long_context": 0.0,
+      "fresh_process_vs_saved": 0.0
+    },
+    "self_query_cosines": [
+      0.9999999999999999,
+      1.0,
+      1.0,
+      1.0,
+      0.9999999999999999,
+      1.0000000000000002,
+      1.0000000000000002,
+      1.0000000000000002,
+      1.0000000000000002,
+      0.9999999999999999,
+      0.9999999999999999
+    ],
+    "maximum_absolute_error": 0.0
+  },
+  "benchmark_report": "resources/checks/embedding-parallel-benchmark.json",
+  "selected_speedup": 1.1387335935371874,
+  "legacy_backup": ".backups/biobert-layer-audit-20261021T150051Z/before",
+  "model_identity_report": "resources/checks/embedding-parallel-model.json",
+  "legacy_negative_control": "resources/checks/embedding-parallel-negative-control.json",
+  "preserved_files_sha256": {
+    "docs/00_mouse_embryo_pathak_PLAN.md": "b2432911e7547cacfd53e40a11123f7718de81e1e53a67a04f0f18ee6b716cc2",
+    "docs/01_mouse_embryo_pathak_resources_PROGRESS.md": "305563d9f2a5c765ec0c4e5452644f065efe6093163dcb68bfbe88491185e090",
+    "config/project.json": "0333f744848ae33cbe0733d9dd24865a9df5ae1f97a6eb4faa0fd7c75596c03c",
+    "environment.yml": "959b2ebbba8bc1a0724f27104c6046e3f2ab29db74070ce759ff48a12766a674"
+  },
+  "scope": "BioBERT encoding only; no mouse corpus adaptation or CPU data changes"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "rejected",
+  "reason": "Strict numerical comparison assertion failed during benchmark; no valid speed report was produced",
+  "intra_threads": 8,
+  "inter_threads": 8,
+  "sentence_intra_threads": 1,
+  "production_changed": false
+}

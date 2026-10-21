@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-21T15:52:16.899057+00:00",
+  "protocol": "masked_mean_parallel_sentence_v1",
+  "batch_size": 16,
+  "tf_config_proto_bytes": [
+    16,
+    2,
+    40,
+    8
+  ],
+  "case_count": 13,
+  "thresholds": {
+    "max_abs": 1e-05,
+    "min_cosine": 0.999999
+  },
+  "maximum_absolute_error": 0.0,
+  "minimum_cosine": 0.9999999999999998,
+  "comparisons": [
+    {
+      "case": "all_published_vectors_vs_legacy_single",
+      "rows": 5117,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999998,
+      "exact": true
+    },
+    {
+      "case": "raw_default_batch_vs_legacy",
+      "rows": 11,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999,
+      "exact": true
+    },
+    {
+      "case": "raw_actual_single_0",
+      "rows": 1,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999,
+      "exact": true
+    },
+    {
+      "case": "raw_actual_single_388",
+      "rows": 1,
+      "max_abs": 0.0,
+      "min_cosine": 1.0000000000000002,
+      "exact": true
+    },
+    {
+      "case": "raw_actual_single_647",
+      "rows": 1,
+      "max_abs": 0.0,
+      "min_cosine": 1.0000000000000002,
+      "exact": true
+    },
+    {
+      "case": "raw_actual_single_4564",
+      "rows": 1,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999,
+      "exact": true
+    },
+    {
+      "case": "saved_default_batch_vs_legacy",
+      "rows": 11,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999,
+      "exact": true
+    },
+    {
+      "case": "saved_series_nondefault_index",
+      "rows": 11,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999,
+      "exact": true
+    },
+    {
+      "case": "saved_reversed_order",
+      "rows": 11,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999,
+      "exact": true
+    },
+    {
+      "case": "saved_sensitive_repeated17",
+      "rows": 17,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999,
+      "exact": true
+    },
+    {
+      "case": "saved_call_chunks_1_5_remainder",
+      "rows": 11,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999,
+      "exact": true
+    },
+    {
+      "case": "raw_truncation_boundary_vs_original_single",
+      "rows": 5,
+      "max_abs": 0.0,
+      "min_cosine": 1.0,
+      "exact": true
+    },
+    {
+      "case": "saved_truncation_boundary_vs_original_single",
+      "rows": 5,
+      "max_abs": 0.0,
+      "min_cosine": 1.0,
+      "exact": true
+    }
+  ],
+  "manifest_verified": true,
+  "legacy_reference_pickle": ".backups/biobert-layer-audit-20261021T150051Z/before/tutorials/predictions_full_BP.pickle"
+}

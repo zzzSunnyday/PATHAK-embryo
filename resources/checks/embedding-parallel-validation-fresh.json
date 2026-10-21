@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-21T15:31:07.909586+00:00",
+  "thresholds": {
+    "max_abs": 1e-05,
+    "min_cosine": 0.999999
+  },
+  "output_level": "document",
+  "dimension": 768,
+  "maximum_absolute_error": 0.0,
+  "minimum_cosine": 0.9999999999999999,
+  "case_count": 3,
+  "comparisons": [
+    {
+      "case": "fresh_saved_batch16_vs_original_single",
+      "rows": 40,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999
+    },
+    {
+      "case": "fresh_saved_reversed",
+      "rows": 40,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999
+    },
+    {
+      "case": "fresh_saved_series",
+      "rows": 40,
+      "max_abs": 0.0,
+      "min_cosine": 0.9999999999999999
+    }
+  ],
+  "model_loads": {},
+  "max_sentence_length": 128,
+  "case_sensitive": true,
+  "threads": {
+    "OMP_NUM_THREADS": "2",
+    "TF_NUM_INTRAOP_THREADS": "2",
+    "TF_NUM_INTEROP_THREADS": "2"
+  }
+}

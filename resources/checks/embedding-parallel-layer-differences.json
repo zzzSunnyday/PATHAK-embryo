@@ -1,0 +1,733 @@
+{
+  "first_repeated_difference": {
+    "node": "bert/embeddings/LayerNorm/batchnorm/add_1",
+    "shape_single": [
+      1,
+      28,
+      768
+    ],
+    "repeated_max_abs": 4.76837158203125e-07,
+    "repeated_first_max_abs": 4.76837158203125e-07,
+    "mixed_first_max_abs": 4.76837158203125e-07
+  },
+  "instrumented_vs_pooled_only": {
+    "single": 0.0,
+    "mixed8": 0.0
+  },
+  "layers": [
+    {
+      "node": "bert/embeddings/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 4.76837158203125e-07,
+      "repeated_first_max_abs": 4.76837158203125e-07,
+      "mixed_first_max_abs": 4.76837158203125e-07
+    },
+    {
+      "node": "bert/encoder/layer_0/attention/self/query/MatMul",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 9.5367431640625e-07,
+      "repeated_first_max_abs": 9.5367431640625e-07,
+      "mixed_first_max_abs": 9.5367431640625e-07
+    },
+    {
+      "node": "bert/encoder/layer_0/attention/self/key/MatMul",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 9.5367431640625e-07,
+      "repeated_first_max_abs": 9.5367431640625e-07,
+      "mixed_first_max_abs": 9.5367431640625e-07
+    },
+    {
+      "node": "bert/encoder/layer_0/attention/self/value/MatMul",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 4.76837158203125e-07,
+      "repeated_first_max_abs": 4.76837158203125e-07,
+      "mixed_first_max_abs": 4.76837158203125e-07
+    },
+    {
+      "node": "bert/encoder/layer_0/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 7.62939453125e-06,
+      "repeated_first_max_abs": 7.62939453125e-06,
+      "mixed_first_max_abs": 7.62939453125e-06
+    },
+    {
+      "node": "bert/encoder/layer_0/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 3.0994415283203125e-06,
+      "repeated_first_max_abs": 3.0994415283203125e-06,
+      "mixed_first_max_abs": 2.86102294921875e-06
+    },
+    {
+      "node": "bert/encoder/layer_0/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 1.7285346984863281e-06,
+      "repeated_first_max_abs": 1.7285346984863281e-06,
+      "mixed_first_max_abs": 1.7285346984863281e-06
+    },
+    {
+      "node": "bert/encoder/layer_0/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 1.8477439880371094e-06,
+      "repeated_first_max_abs": 1.8477439880371094e-06,
+      "mixed_first_max_abs": 1.9371509552001953e-06
+    },
+    {
+      "node": "bert/encoder/layer_0/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 9.5367431640625e-07,
+      "repeated_first_max_abs": 9.5367431640625e-07,
+      "mixed_first_max_abs": 9.5367431640625e-07
+    },
+    {
+      "node": "bert/encoder/layer_1/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 7.62939453125e-06,
+      "repeated_first_max_abs": 7.62939453125e-06,
+      "mixed_first_max_abs": 7.62939453125e-06
+    },
+    {
+      "node": "bert/encoder/layer_1/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 3.814697265625e-06,
+      "repeated_first_max_abs": 3.814697265625e-06,
+      "mixed_first_max_abs": 1.1444091796875e-05
+    },
+    {
+      "node": "bert/encoder/layer_1/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 2.086162567138672e-06,
+      "repeated_first_max_abs": 2.086162567138672e-06,
+      "mixed_first_max_abs": 2.086162567138672e-06
+    },
+    {
+      "node": "bert/encoder/layer_1/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 3.814697265625e-06,
+      "repeated_first_max_abs": 3.814697265625e-06,
+      "mixed_first_max_abs": 1.1444091796875e-05
+    },
+    {
+      "node": "bert/encoder/layer_1/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 1.9073486328125e-06,
+      "repeated_first_max_abs": 1.9073486328125e-06,
+      "mixed_first_max_abs": 1.9073486328125e-06
+    },
+    {
+      "node": "bert/encoder/layer_2/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 5.7220458984375e-06,
+      "repeated_first_max_abs": 5.7220458984375e-06,
+      "mixed_first_max_abs": 7.62939453125e-06
+    },
+    {
+      "node": "bert/encoder/layer_2/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 5.7220458984375e-06,
+      "repeated_first_max_abs": 5.7220458984375e-06,
+      "mixed_first_max_abs": 6.67572021484375e-06
+    },
+    {
+      "node": "bert/encoder/layer_2/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 1.9818544387817383e-06,
+      "repeated_first_max_abs": 1.9818544387817383e-06,
+      "mixed_first_max_abs": 1.817941665649414e-06
+    },
+    {
+      "node": "bert/encoder/layer_2/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 3.814697265625e-06,
+      "repeated_first_max_abs": 3.814697265625e-06,
+      "mixed_first_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "node": "bert/encoder/layer_2/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 1.9073486328125e-06,
+      "repeated_first_max_abs": 1.9073486328125e-06,
+      "mixed_first_max_abs": 1.9073486328125e-06
+    },
+    {
+      "node": "bert/encoder/layer_3/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 7.62939453125e-06,
+      "repeated_first_max_abs": 7.62939453125e-06,
+      "mixed_first_max_abs": 7.62939453125e-06
+    },
+    {
+      "node": "bert/encoder/layer_3/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 5.7220458984375e-06,
+      "repeated_first_max_abs": 5.7220458984375e-06,
+      "mixed_first_max_abs": 5.7220458984375e-06
+    },
+    {
+      "node": "bert/encoder/layer_3/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 2.291053533554077e-06,
+      "repeated_first_max_abs": 2.0563602447509766e-06,
+      "mixed_first_max_abs": 1.994892954826355e-06
+    },
+    {
+      "node": "bert/encoder/layer_3/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 4.76837158203125e-06,
+      "repeated_first_max_abs": 2.384185791015625e-06,
+      "mixed_first_max_abs": 2.86102294921875e-06
+    },
+    {
+      "node": "bert/encoder/layer_3/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 1.9073486328125e-06,
+      "repeated_first_max_abs": 1.9073486328125e-06,
+      "mixed_first_max_abs": 1.9073486328125e-06
+    },
+    {
+      "node": "bert/encoder/layer_4/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 7.62939453125e-06,
+      "repeated_first_max_abs": 7.62939453125e-06,
+      "mixed_first_max_abs": 1.52587890625e-05
+    },
+    {
+      "node": "bert/encoder/layer_4/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 5.7220458984375e-06,
+      "repeated_first_max_abs": 5.7220458984375e-06,
+      "mixed_first_max_abs": 7.62939453125e-06
+    },
+    {
+      "node": "bert/encoder/layer_4/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 2.294778823852539e-06,
+      "repeated_first_max_abs": 1.9222497940063477e-06,
+      "mixed_first_max_abs": 2.0116567611694336e-06
+    },
+    {
+      "node": "bert/encoder/layer_4/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 3.5762786865234375e-06,
+      "repeated_first_max_abs": 3.5762786865234375e-06,
+      "mixed_first_max_abs": 3.814697265625e-06
+    },
+    {
+      "node": "bert/encoder/layer_4/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 2.86102294921875e-06,
+      "repeated_first_max_abs": 1.9073486328125e-06,
+      "mixed_first_max_abs": 3.814697265625e-06
+    },
+    {
+      "node": "bert/encoder/layer_5/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 9.5367431640625e-06,
+      "repeated_first_max_abs": 7.62939453125e-06,
+      "mixed_first_max_abs": 9.5367431640625e-06
+    },
+    {
+      "node": "bert/encoder/layer_5/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 5.7220458984375e-06,
+      "repeated_first_max_abs": 5.7220458984375e-06,
+      "mixed_first_max_abs": 5.245208740234375e-06
+    },
+    {
+      "node": "bert/encoder/layer_5/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 3.769993782043457e-06,
+      "repeated_first_max_abs": 2.1830201148986816e-06,
+      "mixed_first_max_abs": 2.3543834686279297e-06
+    },
+    {
+      "node": "bert/encoder/layer_5/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 3.814697265625e-06,
+      "repeated_first_max_abs": 3.814697265625e-06,
+      "mixed_first_max_abs": 2.9802322387695312e-06
+    },
+    {
+      "node": "bert/encoder/layer_5/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 2.86102294921875e-06,
+      "repeated_first_max_abs": 2.086162567138672e-06,
+      "mixed_first_max_abs": 1.9073486328125e-06
+    },
+    {
+      "node": "bert/encoder/layer_6/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 7.62939453125e-06,
+      "repeated_first_max_abs": 7.62939453125e-06,
+      "mixed_first_max_abs": 3.814697265625e-06
+    },
+    {
+      "node": "bert/encoder/layer_6/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 5.7220458984375e-06,
+      "repeated_first_max_abs": 5.7220458984375e-06,
+      "mixed_first_max_abs": 5.7220458984375e-06
+    },
+    {
+      "node": "bert/encoder/layer_6/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 2.6151537895202637e-06,
+      "repeated_first_max_abs": 2.592802047729492e-06,
+      "mixed_first_max_abs": 3.069639205932617e-06
+    },
+    {
+      "node": "bert/encoder/layer_6/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 3.337860107421875e-06,
+      "repeated_first_max_abs": 3.337860107421875e-06,
+      "mixed_first_max_abs": 3.3974647521972656e-06
+    },
+    {
+      "node": "bert/encoder/layer_6/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 3.814697265625e-06,
+      "repeated_first_max_abs": 2.86102294921875e-06,
+      "mixed_first_max_abs": 2.86102294921875e-06
+    },
+    {
+      "node": "bert/encoder/layer_7/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 1.52587890625e-05,
+      "repeated_first_max_abs": 7.62939453125e-06,
+      "mixed_first_max_abs": 1.52587890625e-05
+    },
+    {
+      "node": "bert/encoder/layer_7/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 7.62939453125e-06,
+      "repeated_first_max_abs": 5.7220458984375e-06,
+      "mixed_first_max_abs": 6.9141387939453125e-06
+    },
+    {
+      "node": "bert/encoder/layer_7/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 3.0100345611572266e-06,
+      "repeated_first_max_abs": 2.4586915969848633e-06,
+      "mixed_first_max_abs": 5.509704351425171e-06
+    },
+    {
+      "node": "bert/encoder/layer_7/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 7.62939453125e-06,
+      "repeated_first_max_abs": 3.2186508178710938e-06,
+      "mixed_first_max_abs": 6.4373016357421875e-06
+    },
+    {
+      "node": "bert/encoder/layer_7/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 4.76837158203125e-06,
+      "repeated_first_max_abs": 3.814697265625e-06,
+      "mixed_first_max_abs": 3.814697265625e-06
+    },
+    {
+      "node": "bert/encoder/layer_8/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 9.5367431640625e-06,
+      "repeated_first_max_abs": 5.7220458984375e-06,
+      "mixed_first_max_abs": 1.33514404296875e-05
+    },
+    {
+      "node": "bert/encoder/layer_8/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 2.2411346435546875e-05,
+      "repeated_first_max_abs": 1.1444091796875e-05,
+      "mixed_first_max_abs": 3.1948089599609375e-05
+    },
+    {
+      "node": "bert/encoder/layer_8/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 1.1324882507324219e-05,
+      "repeated_first_max_abs": 2.0712614059448242e-06,
+      "mixed_first_max_abs": 1.6614794731140137e-05
+    },
+    {
+      "node": "bert/encoder/layer_8/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 2.288818359375e-05,
+      "repeated_first_max_abs": 4.0531158447265625e-06,
+      "mixed_first_max_abs": 3.266334533691406e-05
+    },
+    {
+      "node": "bert/encoder/layer_8/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 2.956390380859375e-05,
+      "repeated_first_max_abs": 5.245208740234375e-06,
+      "mixed_first_max_abs": 4.38690185546875e-05
+    },
+    {
+      "node": "bert/encoder/layer_9/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 9.822845458984375e-05,
+      "repeated_first_max_abs": 1.71661376953125e-05,
+      "mixed_first_max_abs": 0.00014209747314453125
+    },
+    {
+      "node": "bert/encoder/layer_9/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 0.0001010894775390625,
+      "repeated_first_max_abs": 2.193450927734375e-05,
+      "mixed_first_max_abs": 0.00014400482177734375
+    },
+    {
+      "node": "bert/encoder/layer_9/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 5.2988529205322266e-05,
+      "repeated_first_max_abs": 1.1086463928222656e-05,
+      "mixed_first_max_abs": 7.88271427154541e-05
+    },
+    {
+      "node": "bert/encoder/layer_9/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 0.00011241436004638672,
+      "repeated_first_max_abs": 2.4437904357910156e-05,
+      "mixed_first_max_abs": 0.00016033649444580078
+    },
+    {
+      "node": "bert/encoder/layer_9/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 0.00028133392333984375,
+      "repeated_first_max_abs": 5.91278076171875e-05,
+      "mixed_first_max_abs": 0.000415802001953125
+    },
+    {
+      "node": "bert/encoder/layer_10/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 0.0013885498046875,
+      "repeated_first_max_abs": 0.000293731689453125,
+      "mixed_first_max_abs": 0.002044677734375
+    },
+    {
+      "node": "bert/encoder/layer_10/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 0.0005664825439453125,
+      "repeated_first_max_abs": 0.00011730194091796875,
+      "mixed_first_max_abs": 0.0008258819580078125
+    },
+    {
+      "node": "bert/encoder/layer_10/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 4.509091377258301e-05,
+      "repeated_first_max_abs": 8.866190910339355e-06,
+      "mixed_first_max_abs": 6.663799285888672e-05
+    },
+    {
+      "node": "bert/encoder/layer_10/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 0.0005664825439453125,
+      "repeated_first_max_abs": 0.00011730194091796875,
+      "mixed_first_max_abs": 0.0008258819580078125
+    },
+    {
+      "node": "bert/encoder/layer_10/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 0.00020551681518554688,
+      "repeated_first_max_abs": 4.291534423828125e-05,
+      "mixed_first_max_abs": 0.00030100345611572266
+    },
+    {
+      "node": "bert/encoder/layer_11/attention/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 0.0009365081787109375,
+      "repeated_first_max_abs": 0.00019550323486328125,
+      "mixed_first_max_abs": 0.0013713836669921875
+    },
+    {
+      "node": "bert/encoder/layer_11/intermediate/dense/BiasAdd",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 0.00011777877807617188,
+      "repeated_first_max_abs": 2.4318695068359375e-05,
+      "mixed_first_max_abs": 0.00017404556274414062
+    },
+    {
+      "node": "bert/encoder/layer_11/intermediate/dense/Tanh",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 4.83393669128418e-05,
+      "repeated_first_max_abs": 1.0773539543151855e-05,
+      "mixed_first_max_abs": 7.179379463195801e-05
+    },
+    {
+      "node": "bert/encoder/layer_11/intermediate/dense/mul_3",
+      "shape_single": [
+        1,
+        28,
+        3072
+      ],
+      "repeated_max_abs": 0.000118255615234375,
+      "repeated_first_max_abs": 2.4318695068359375e-05,
+      "mixed_first_max_abs": 0.00017452239990234375
+    },
+    {
+      "node": "bert/encoder/layer_11/output/LayerNorm/batchnorm/add_1",
+      "shape_single": [
+        1,
+        28,
+        768
+      ],
+      "repeated_max_abs": 0.0002980232238769531,
+      "repeated_first_max_abs": 6.198883056640625e-05,
+      "mixed_first_max_abs": 0.0004367828369140625
+    },
+    {
+      "node": "pooled_output",
+      "shape_single": [
+        1,
+        768
+      ],
+      "repeated_max_abs": 1.049041748046875e-05,
+      "repeated_first_max_abs": 2.86102294921875e-06,
+      "mixed_first_max_abs": 1.52587890625e-05
+    }
+  ]
+}

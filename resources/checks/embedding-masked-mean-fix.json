@@ -1,0 +1,201 @@
+{
+  "status": "not_promoted_full_library_tolerance_failed",
+  "checked_utc": "2026-10-21T10:45:04.188192+00:00",
+  "root_cause": "Original pooled_output reads an unmasked Mean over padded sequences; attention masking does not zero PAD hidden states.",
+  "graph_patch": "Independent copy; 8 masked-mean nodes added and pooled_output input rewired; original weights and tokenizer unchanged.",
+  "model_identity": {
+    "status": "not_promoted_full_library_tolerance_failed",
+    "created_utc": "2026-10-21T10:02:23.102889+00:00",
+    "protocol": "biobert_masked_mean_cls_sep_v1",
+    "formula": "sum(hidden * cast(input_mask)[...,None], axis=1) / sum(mask, axis=1)",
+    "special_tokens": "CLS and SEP retained; only PAD excluded",
+    "original_model": "models/sent_biobert_pubmed_base_cased",
+    "patched_model": "models/sent_biobert_pubmed_base_cased_masked_mean",
+    "original_archive_sha256": "165a38e20e3b53569947fb3af8803deb8132e75e81ab75d1337b4c7b4d40cf90",
+    "patched_archive_sha256": "2aaa68f42b82e02852957c1236ba1e4672b6fa6c6fea1ea1cd726bac16d0ad63",
+    "archive_members": {
+      "variables.data-00000-of-00001": {
+        "original_sha256": "0c861e31aee67b085d618f582a5a7fcfe4129753f9578281c45ce86a8ede6c22",
+        "patched_sha256": "0c861e31aee67b085d618f582a5a7fcfe4129753f9578281c45ce86a8ede6c22",
+        "bytes": 433241088
+      },
+      "variables.index": {
+        "original_sha256": "0121af1dfa09816805a6fe8185d25565f8b26d979b0b5c658a73995e2b7d0289",
+        "patched_sha256": "0121af1dfa09816805a6fe8185d25565f8b26d979b0b5c658a73995e2b7d0289",
+        "bytes": 8224
+      },
+      "saved_model.pb": {
+        "original_sha256": "c047cd393722909aaf1bc39c8d6530eb9522027ba62d9ff33fd64982cf670736",
+        "patched_sha256": "f8e7c54fcd185d80983a6225e07f695482285c0f906872ac05b8998dcee8b37f",
+        "bytes": 665188
+      }
+    },
+    "vocabulary_sha256": {
+      "fields/vocabulary/._SUCCESS.crc": "1d44f510ec2ed7595badbec80583316defc14e8dd89130d719724149adfaa07d",
+      "fields/vocabulary/.part-00000.crc": "8279d070db7bc3eeeb247745a71ed8a7cde3d38632429fbd7b57b2b96f3dca02",
+      "fields/vocabulary/.part-00001.crc": "498898f1f7f8a53a658ea4c35a44596d13cb502784e232b674f6be77c93c01de",
+      "fields/vocabulary/.part-00002.crc": "a8c91f6c50b8a9d1ed5b58c88acf2f66f4be5e987f8566bcc74deff1712b5ca3",
+      "fields/vocabulary/.part-00003.crc": "5c98965e4db682f5a9e427c80e6ac52676614d36e1b50ad704405eb91ce21c79",
+      "fields/vocabulary/.part-00004.crc": "72c474be3071e2d84704f17ac603b078ab7b649671a3b6a4fc8f5c2ce9ce45fd",
+      "fields/vocabulary/.part-00005.crc": "6c31a7756758b1982bd065ae197b1b3ea9dbc760afd9698a26946dfa8aae66f9",
+      "fields/vocabulary/.part-00006.crc": "8680c6e2266e562b0bf24b79819ae9d31c49a2d2dba0f2bb96436879a015f5cd",
+      "fields/vocabulary/.part-00007.crc": "9cc2bd53328828d2957ee5d7077ec807b921cab8d37c52a3de9e114d73db8969",
+      "fields/vocabulary/.part-00008.crc": "f5b967fdc0c81d37fd63915b8b16984ffd68b947ad7d04c342d4f289e7e70732",
+      "fields/vocabulary/.part-00009.crc": "77049bc60247513e98fb732eec73ffec1d47c0674c1da37078979576fe211316",
+      "fields/vocabulary/.part-00010.crc": "0c121fd65406196d0ab6f0b0569e4b0dfe54c75b8d5a47f279107648abd87b14",
+      "fields/vocabulary/.part-00011.crc": "4d55590b14efe66a0fd648fab14e3616eb02fafaa3563c7858109a259b606d7f",
+      "fields/vocabulary/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fields/vocabulary/part-00000": "f218cb4ffbeac715389952259bf5c5f6bb0e03ade9d3d768f669855dc4c407fd",
+      "fields/vocabulary/part-00001": "a353d9dc53c468a8b7d79b84ccbefe92d8ebb81322eb5525f144f121ed4e24c5",
+      "fields/vocabulary/part-00002": "b9f035ae144fc3cb57cc3633b85bbb5937a648a94c47b70a79c15cafd69d5214",
+      "fields/vocabulary/part-00003": "4b97f09ce26da8a0a0570c43cb268281eaa91df99b0e4fb7f540acf2a0ee2ca0",
+      "fields/vocabulary/part-00004": "e4704aa109b0148b028159092c22e806a9d686aecfe812458ba3e9621ded3bfc",
+      "fields/vocabulary/part-00005": "2da7181fc6d275b7daff85012153b71776f565c55a6dfe8beae3208e5cb866fd",
+      "fields/vocabulary/part-00006": "dd815659e8e2137ba20753286c8d1f23e46250c97b271a76bb91c46c8de29ca9",
+      "fields/vocabulary/part-00007": "6ccda3af9af608b42ec15eaf244f36978d49797b21e0116e8c225c8acb20606c",
+      "fields/vocabulary/part-00008": "6a304d0b11e8d941c1349323742e2ae5e9e19bbdaa0f7fa3c5a2048bf084e1f3",
+      "fields/vocabulary/part-00009": "bc6ae8e74e49fe5002b37c51ba0d9c62979c538ed77ce314b624f3227abad5b5",
+      "fields/vocabulary/part-00010": "f40ba15734424ec152f35fc31fb74358f06d8eda5cc6bc46d6b2454b24aa1a53",
+      "fields/vocabulary/part-00011": "a78cce3ffee499bb7cfcef2e07627a5bb5185fea1f4bcde607b1f6873f2400fe"
+    },
+    "metadata_sha256": "e9402f16a1dcd1a8eebb9aceedee0769a63b252ab66e87257f095474e990da6e",
+    "tokenizer_and_metadata": "unchanged; caseSensitive=true; maxSentenceLength=128",
+    "implementation": "8 graph nodes added; pooled_output input rewired; Java TensorFlow executes pooling",
+    "source_reference": "https://github.com/JohnSnowLabs/spark-nlp/blob/4.0.2/src/main/scala/com/johnsnowlabs/ml/tensorflow/TensorflowBert.scala"
+  },
+  "thresholds": {
+    "max_abs": 1e-05,
+    "min_cosine": 0.999999
+  },
+  "small_validation": {
+    "status": "passed",
+    "cases": 36,
+    "max_abs": 1.9073486328125e-06,
+    "min_cosine": 0.9999999999997238,
+    "report": "resources/checks/embedding-masked-mean-validation.json"
+  },
+  "fresh_candidate_validation": {
+    "status": "passed",
+    "max_abs": 1.9073486328125e-06,
+    "report": "resources/checks/embedding-masked-mean-validation-fresh.json"
+  },
+  "full_library_validation": {
+    "status": "failed",
+    "rows": 5117,
+    "dimension": 768,
+    "batch_size": 8,
+    "failed_rows": 2,
+    "max_abs": 1.52587890625e-05,
+    "min_cosine": 0.9999999999961104,
+    "failures": [
+      {
+        "index": 4564,
+        "GO": "GO:0090558",
+        "max_abs": 1.52587890625e-05,
+        "cosine": 0.9999999999961104,
+        "text": "The process whose specific outcome is the progression of the plant epidermis over time, from its formation to the mature structure."
+      },
+      {
+        "index": 647,
+        "GO": "GO:0006303",
+        "max_abs": 1.239776611328125e-05,
+        "cosine": 0.999999999998146,
+        "text": "These in turn may further branch into sub-pathways, but evidence is still unclear."
+      }
+    ],
+    "encoding_seconds": 166.04133039712906,
+    "report": "resources/checks/embedding-masked-mean-full-library.json"
+  },
+  "benchmark": {
+    "scope": "256 representative GO definitions; 3 warmed rotated rounds; full corpus acceptance failed",
+    "rows": 256,
+    "rounds": 3,
+    "results": {
+      "original_batch1": {
+        "batch_size": 1,
+        "load_seconds": 6.006426054984331,
+        "first_prediction_32_seconds": 4.558366626501083,
+        "second_warmup_32_seconds": 1.5506089515984058,
+        "encoding_seconds": [
+          10.777014072984457,
+          10.747465576976538,
+          10.672139819711447
+        ],
+        "vs_original_max_abs": 0.0,
+        "vs_original_min_cosine": 0.9999999999999998,
+        "median_encoding_seconds": 10.747465576976538,
+        "items_per_second": 23.819569196705217,
+        "speedup_vs_original_batch1": 1.0
+      },
+      "masked_batch1": {
+        "batch_size": 1,
+        "load_seconds": 4.248528268188238,
+        "first_prediction_32_seconds": 2.25912519544363,
+        "second_warmup_32_seconds": 1.539689727127552,
+        "encoding_seconds": [
+          10.793928243219852,
+          10.785123273730278,
+          10.73394613340497
+        ],
+        "vs_original_max_abs": 0.0,
+        "vs_original_min_cosine": 0.9999999999999998,
+        "median_encoding_seconds": 10.785123273730278,
+        "items_per_second": 23.73639999308572,
+        "speedup_vs_original_batch1": 0.9965083665899801
+      },
+      "masked_batch8": {
+        "batch_size": 8,
+        "load_seconds": 4.217543333768845,
+        "first_prediction_32_seconds": 1.4311622604727745,
+        "second_warmup_32_seconds": 1.2014713175594807,
+        "encoding_seconds": [
+          8.494702357798815,
+          8.489142309874296,
+          8.410596143454313
+        ],
+        "vs_original_max_abs": 9.5367431640625e-06,
+        "vs_original_min_cosine": 0.9999999999985143,
+        "median_encoding_seconds": 8.489142309874296,
+        "items_per_second": 30.1561678029863,
+        "speedup_vs_original_batch1": 1.2660249038911071
+      },
+      "masked_batch16": {
+        "batch_size": 16,
+        "load_seconds": 5.514618586748838,
+        "first_prediction_32_seconds": 1.415599849075079,
+        "second_warmup_32_seconds": 1.283408533781767,
+        "encoding_seconds": [
+          9.346998870372772,
+          9.219116151332855,
+          9.273773539811373
+        ],
+        "vs_original_max_abs": 9.5367431640625e-06,
+        "vs_original_min_cosine": 0.9999999999985143,
+        "median_encoding_seconds": 9.273773539811373,
+        "items_per_second": 27.604728420531067,
+        "speedup_vs_original_batch1": 1.1589096424275138
+      }
+    },
+    "report": "resources/checks/embedding-masked-mean-benchmark.json"
+  },
+  "residual_error": "Valid-token hidden states retain batch-shape floating-point differences; float64 mean still exceeds 1e-5 on sensitive texts. Exact amplifying encoder operation remains unresolved.",
+  "additional_trials": [
+    "TF_ENABLE_ONEDNN_OPTS=0 did not change sensitive examples.",
+    "Float64 Softmax and float64 QK/scale/mask/Softmax still exceeded the original-baseline threshold; not deployed.",
+    "Exact WordPiece-length grouping also exceeded threshold for some batches; extra Java helper archived and absent from the production classpath."
+  ],
+  "production": {
+    "protocol": "legacy_biobert_internal_batch_1_v1",
+    "model": "models/sent_biobert_pubmed_base_cased",
+    "internal_batch_size": 1,
+    "pipeline": "tutorials/pipe_full_BP",
+    "vectors": "tutorials/predictions_full_BP.pickle",
+    "manifest": "tutorials/embedding_manifest.json",
+    "fresh_fallback_status": "passed",
+    "fresh_fallback_max_abs": 0.0
+  },
+  "backup": ".backups/biobert-masked-mean-20261021T100015Z",
+  "unpublished_candidate_library": ".backups/biobert-masked-mean-20261021T100015Z/work/candidate_tutorials/predictions_full_BP.pickle",
+  "publication": "No candidate vectors, saved pipeline, runtime helper or notebook changes published.",
+  "preserved": "Original model; current runtime/vectors/pipeline/manifest/checker; notebooks/stage1; project plans/progress; mouse data/results; dependency versions; CPU data."
+}

@@ -1,0 +1,13 @@
+{
+  "npz_sha256": "73deaa28c1fee0c15854164eb03c9ebc249219d33eb95d39e6eab6c17353ce21",
+  "source_archive_sha256": "165a38e20e3b53569947fb3af8803deb8132e75e81ab75d1337b4c7b4d40cf90",
+  "reference_batch_size": 1,
+  "effective_global_intra_threads": 2,
+  "inter_threads": 8,
+  "case_sensitive": true,
+  "max_sentence_length": 128,
+  "producer": ".backups/biobert-performance-20261021T161556Z/benchmark_global8.py",
+  "producer_sha256": "b1b1b0eca415b6fbac0ed27478fe9ad1e4e24c39c7eb19100efd588931cd6465",
+  "source_npz_sha256": "313b28b95f49e8acf87bde92c131907976db8c5d3bfcfd46737c8ed82be8c4ff",
+  "reason": "The first session fixes the JVM intra-op pool; do not reconstruct the CPU2 reference inside the CPU8 postcheck JVM."
+}

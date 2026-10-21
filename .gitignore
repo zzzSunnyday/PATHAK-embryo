@@ -26,3 +26,29 @@ __pycache__/
 # Legacy root resource copies
 /Auxiliary_Files/
 /Example_data/
+
+# Local runtime payloads and verification logs
+/resources/jars/
+/resources/archives/
+/resources/checks/*
+!/resources/checks/*.py
+!/resources/checks/*.java
+!/resources/checks/README.md
+!/resources/checks/embedding-*.json
+!/resources/checks/embedding-original-single-cpu2-reference.npz
+!/resources/checks/reports/
+!/resources/checks/biobert-performance/
+/resources/checks/biobert-performance/*
+!/resources/checks/biobert-performance/*.py
+!/resources/checks/biobert-performance/*.java
+!/resources/checks/biobert-performance/*.md
+
+# Generated teaching outputs
+/tutorials/GO_BP_Ontology_corups.tsv
+/tutorials/GO_BP_Ontology_corups_Filtered.tsv
+/tutorials/predictions_full_BP.pickle
+/tutorials/pipe_full_BP/
+/tutorials/temp.del
+
+# Local audit snapshots, historical models, and isolated experiments
+/.backups/

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "formal_runtime_vectors_manifest_checker": "unchanged",
+  "formal_saved_pipeline_files_identical_to_backup": 20,
+  "research_plan_progress_stage1_and_resources": "unchanged",
+  "original_model_archive": "unchanged",
+  "candidate_archive": "matches_patch",
+  "dependency_versions": "unchanged",
+  "new_python_syntax": "passed",
+  "documentation_links_and_whitespace": "passed",
+  "extra_experimental_jar": "not_on_production_classpath",
+  "candidate_full_recheck": "failed as expected: 2 rows"
+}

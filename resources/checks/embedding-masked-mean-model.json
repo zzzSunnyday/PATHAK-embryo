@@ -1,0 +1,60 @@
+{
+  "status": "not_promoted_full_library_tolerance_failed",
+  "created_utc": "2026-10-21T10:02:23.102889+00:00",
+  "protocol": "biobert_masked_mean_cls_sep_v1",
+  "formula": "sum(hidden * cast(input_mask)[...,None], axis=1) / sum(mask, axis=1)",
+  "special_tokens": "CLS and SEP retained; only PAD excluded",
+  "original_model": "models/sent_biobert_pubmed_base_cased",
+  "patched_model": "models/sent_biobert_pubmed_base_cased_masked_mean",
+  "original_archive_sha256": "165a38e20e3b53569947fb3af8803deb8132e75e81ab75d1337b4c7b4d40cf90",
+  "patched_archive_sha256": "2aaa68f42b82e02852957c1236ba1e4672b6fa6c6fea1ea1cd726bac16d0ad63",
+  "archive_members": {
+    "variables.data-00000-of-00001": {
+      "original_sha256": "0c861e31aee67b085d618f582a5a7fcfe4129753f9578281c45ce86a8ede6c22",
+      "patched_sha256": "0c861e31aee67b085d618f582a5a7fcfe4129753f9578281c45ce86a8ede6c22",
+      "bytes": 433241088
+    },
+    "variables.index": {
+      "original_sha256": "0121af1dfa09816805a6fe8185d25565f8b26d979b0b5c658a73995e2b7d0289",
+      "patched_sha256": "0121af1dfa09816805a6fe8185d25565f8b26d979b0b5c658a73995e2b7d0289",
+      "bytes": 8224
+    },
+    "saved_model.pb": {
+      "original_sha256": "c047cd393722909aaf1bc39c8d6530eb9522027ba62d9ff33fd64982cf670736",
+      "patched_sha256": "f8e7c54fcd185d80983a6225e07f695482285c0f906872ac05b8998dcee8b37f",
+      "bytes": 665188
+    }
+  },
+  "vocabulary_sha256": {
+    "fields/vocabulary/._SUCCESS.crc": "1d44f510ec2ed7595badbec80583316defc14e8dd89130d719724149adfaa07d",
+    "fields/vocabulary/.part-00000.crc": "8279d070db7bc3eeeb247745a71ed8a7cde3d38632429fbd7b57b2b96f3dca02",
+    "fields/vocabulary/.part-00001.crc": "498898f1f7f8a53a658ea4c35a44596d13cb502784e232b674f6be77c93c01de",
+    "fields/vocabulary/.part-00002.crc": "a8c91f6c50b8a9d1ed5b58c88acf2f66f4be5e987f8566bcc74deff1712b5ca3",
+    "fields/vocabulary/.part-00003.crc": "5c98965e4db682f5a9e427c80e6ac52676614d36e1b50ad704405eb91ce21c79",
+    "fields/vocabulary/.part-00004.crc": "72c474be3071e2d84704f17ac603b078ab7b649671a3b6a4fc8f5c2ce9ce45fd",
+    "fields/vocabulary/.part-00005.crc": "6c31a7756758b1982bd065ae197b1b3ea9dbc760afd9698a26946dfa8aae66f9",
+    "fields/vocabulary/.part-00006.crc": "8680c6e2266e562b0bf24b79819ae9d31c49a2d2dba0f2bb96436879a015f5cd",
+    "fields/vocabulary/.part-00007.crc": "9cc2bd53328828d2957ee5d7077ec807b921cab8d37c52a3de9e114d73db8969",
+    "fields/vocabulary/.part-00008.crc": "f5b967fdc0c81d37fd63915b8b16984ffd68b947ad7d04c342d4f289e7e70732",
+    "fields/vocabulary/.part-00009.crc": "77049bc60247513e98fb732eec73ffec1d47c0674c1da37078979576fe211316",
+    "fields/vocabulary/.part-00010.crc": "0c121fd65406196d0ab6f0b0569e4b0dfe54c75b8d5a47f279107648abd87b14",
+    "fields/vocabulary/.part-00011.crc": "4d55590b14efe66a0fd648fab14e3616eb02fafaa3563c7858109a259b606d7f",
+    "fields/vocabulary/_SUCCESS": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fields/vocabulary/part-00000": "f218cb4ffbeac715389952259bf5c5f6bb0e03ade9d3d768f669855dc4c407fd",
+    "fields/vocabulary/part-00001": "a353d9dc53c468a8b7d79b84ccbefe92d8ebb81322eb5525f144f121ed4e24c5",
+    "fields/vocabulary/part-00002": "b9f035ae144fc3cb57cc3633b85bbb5937a648a94c47b70a79c15cafd69d5214",
+    "fields/vocabulary/part-00003": "4b97f09ce26da8a0a0570c43cb268281eaa91df99b0e4fb7f540acf2a0ee2ca0",
+    "fields/vocabulary/part-00004": "e4704aa109b0148b028159092c22e806a9d686aecfe812458ba3e9621ded3bfc",
+    "fields/vocabulary/part-00005": "2da7181fc6d275b7daff85012153b71776f565c55a6dfe8beae3208e5cb866fd",
+    "fields/vocabulary/part-00006": "dd815659e8e2137ba20753286c8d1f23e46250c97b271a76bb91c46c8de29ca9",
+    "fields/vocabulary/part-00007": "6ccda3af9af608b42ec15eaf244f36978d49797b21e0116e8c225c8acb20606c",
+    "fields/vocabulary/part-00008": "6a304d0b11e8d941c1349323742e2ae5e9e19bbdaa0f7fa3c5a2048bf084e1f3",
+    "fields/vocabulary/part-00009": "bc6ae8e74e49fe5002b37c51ba0d9c62979c538ed77ce314b624f3227abad5b5",
+    "fields/vocabulary/part-00010": "f40ba15734424ec152f35fc31fb74358f06d8eda5cc6bc46d6b2454b24aa1a53",
+    "fields/vocabulary/part-00011": "a78cce3ffee499bb7cfcef2e07627a5bb5185fea1f4bcde607b1f6873f2400fe"
+  },
+  "metadata_sha256": "e9402f16a1dcd1a8eebb9aceedee0769a63b252ab66e87257f095474e990da6e",
+  "tokenizer_and_metadata": "unchanged; caseSensitive=true; maxSentenceLength=128",
+  "implementation": "8 graph nodes added; pooled_output input rewired; Java TensorFlow executes pooling",
+  "source_reference": "https://github.com/JohnSnowLabs/spark-nlp/blob/4.0.2/src/main/scala/com/johnsnowlabs/ml/tensorflow/TensorflowBert.scala"
+}

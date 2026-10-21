@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-21T08:10:53.233330+00:00",
+  "protocol": "legacy_biobert_internal_batch_1_v1",
+  "scope": "Current local sent_biobert_pubmed_base_cased export with Spark NLP 4.0.2 / NLU 4.0.0.",
+  "root_cause_scope": "Mixed-length internal batches affect pooled vectors in this legacy export/runtime combination. List versus Series is not the cause; repetition and shuffle tests rule out ordinary input-order and repeatability problems. The exact TensorFlow graph operation is not isolated.",
+  "before_fix": {
+    "first_text_single_vs_mixed_batch_cosine": 0.9139349432825616,
+    "same_text_repeated_8_vs_single_cosine": 0.9999999999999425,
+    "single_repeat_max_abs": 0.0
+  },
+  "fix": "Set internal BertSentenceEmbeddings batchSize=1 for raw and reloaded pipelines; regenerate the GO vectors and saved pipeline. Model weights, package versions and GO input table are unchanged.",
+  "internal_batch_size": 1,
+  "comparison_tests": [
+    {
+      "case": "series_one",
+      "cosine_to_single": 1.0,
+      "max_abs_to_single": 0.0
+    },
+    {
+      "case": "list_16",
+      "cosine_to_single": 1.0,
+      "max_abs_to_single": 0.0
+    },
+    {
+      "case": "series_16",
+      "cosine_to_single": 1.0,
+      "max_abs_to_single": 0.0
+    },
+    {
+      "case": "repeated_same_text_8",
+      "cosine_to_single": 1.0,
+      "max_abs_to_single": 0.0
+    },
+    {
+      "case": "mixed_short_long",
+      "cosine_to_single": 1.0,
+      "max_abs_to_single": 0.0
+    }
+  ],
+  "reverse_order_max_abs": 0.0,
+  "rebuilt_shape": [
+    5117,
+    768
+  ],
+  "definition_row_alignment": "all rows match after whitespace normalization",
+  "rebuild_seconds": 247.303,
+  "saved_pipeline_reload_max_abs": 0.0,
+  "single_query_vs_rebuilt_first_row_cosine": 1.0,
+  "self_query_sample_indices": [
+    0,
+    1,
+    7,
+    15,
+    2558,
+    5116
+  ],
+  "self_query_cosines": [
+    0.9999999999999999,
+    1.0,
+    1.0,
+    1.0,
+    1.0000000000000002,
+    0.9999999999999999
+  ],
+  "old_vs_rebuilt_cosine_min_median_max": [
+    0.9070960578704964,
+    0.9798438923559606,
+    1.0000000000000002
+  ],
+  "go_input_sha256": "3d872b81692702f966aa7241afa9b2be922d36b2ea8105832095431e99bc944f",
+  "rebuilt_pickle_sha256": "0ca1b5b52d66aafce2181e7c135f82cd3f255376a40f9d486042594e21e55896",
+  "runtime_sha256": "7bd49cc75217c10eec9c2963d3a25b608521686f8fa602ab539273c72d91ff7d",
+  "notebook_cells_changed": {
+    "local_2_GO_term_embedding.ipynb": [
+      22
+    ],
+    "local_3_PhenoMiner_plant.ipynb": [
+      14,
+      15
+    ]
+  },
+  "stale_output_cells_cleared": {
+    "local_2_GO_term_embedding.ipynb": [],
+    "local_3_PhenoMiner_plant.ipynb": [
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      33
+    ]
+  },
+  "backup": "/root/gpufree-data/PATHAK/.backups/embedding-batch-fix-20261021T080620Z",
+  "limitations": [
+    "Internal batch size 1 trades throughput for reproducible embeddings.",
+    "Existing Jupyter kernels must reload the helper and pipeline before querying.",
+    "Text similarity thresholds still require task-specific biological validation.",
+    "This repair does not replace TAIR resources or complete the mouse adaptation."
+  ],
+  "documentation_updated": [
+    "README.md",
+    "tutorials/local_3_PhenoMiner_plant.ipynb"
+  ],
+  "fresh_process_validation_report": "/root/gpufree-data/PATHAK/resources/checks/embedding-batch-size-fix-postcheck.json",
+  "fresh_process_validation_max_abs": 0.0,
+  "repair_driver": "/root/gpufree-data/PATHAK/.backups/embedding-batch-fix-20261021T080620Z/repair_driver.py"
+}

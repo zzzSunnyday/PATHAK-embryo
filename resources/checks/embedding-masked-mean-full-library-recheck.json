@@ -1,0 +1,33 @@
+{
+  "status": "failed",
+  "checked_utc": "2026-10-21T10:46:34.484477+00:00",
+  "rows": 5117,
+  "dimension": 768,
+  "batch_size": 8,
+  "fresh_encoding": false,
+  "encoding_seconds": null,
+  "row_alignment": "all rows passed",
+  "max_abs": 1.52587890625e-05,
+  "min_cosine": 0.9999999999961104,
+  "rejected_rows": 2,
+  "thresholds": {
+    "max_abs": 1e-05,
+    "min_cosine": 0.999999
+  },
+  "failures": [
+    {
+      "index": 647,
+      "GO": "GO:0006303",
+      "max_abs": 1.239776611328125e-05,
+      "cosine": 0.999999999998146,
+      "text": "These in turn may further branch into sub-pathways, but evidence is still unclear."
+    },
+    {
+      "index": 4564,
+      "GO": "GO:0090558",
+      "max_abs": 1.52587890625e-05,
+      "cosine": 0.9999999999961104,
+      "text": "The process whose specific outcome is the progression of the plant epidermis over time, from its formation to the mature structure."
+    }
+  ]
+}

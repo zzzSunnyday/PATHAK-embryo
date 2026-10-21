@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-21T15:55:01.274365+00:00",
+  "files_sha256": {
+    "pathak_runtime.py": "90f96e9c6759c59f9ce671bd30c2b207df554a81eb6f9dc742be97a0fd4baa6b",
+    "BIOBERT_FIX_REPORT.md": "0972bfdd73d84efc6955a91568783e2d862e1872121b46f01124a3ca8daf00a3",
+    "README.md": "ef28e8ceb4bb1611909c925e9560ac2ce2a179aa4a8f69944cf5004acced1259",
+    "docs/02_mouse_embryo_pathak_analysis_PROGRESS.md": "287988df73acdd1cee24b0a3d8c39291746d8e7bcf7dafef7f7a2e970a1e88d2",
+    "tutorials/embedding_manifest.json": "0920b931d8b5b8b298a6e325c2635eaefdcd4bf987f4e6487d6dabf1f546c4a5",
+    "tutorials/predictions_full_BP.pickle": "49b2cdcb25de02b2b59a51f5fc96e6e78c575494ac15f58bb99a66874a75e9e4"
+  },
+  "preserved_files_sha256": {
+    "docs/00_mouse_embryo_pathak_PLAN.md": "b2432911e7547cacfd53e40a11123f7718de81e1e53a67a04f0f18ee6b716cc2",
+    "docs/01_mouse_embryo_pathak_resources_PROGRESS.md": "305563d9f2a5c765ec0c4e5452644f065efe6093163dcb68bfbe88491185e090",
+    "config/project.json": "0333f744848ae33cbe0733d9dd24865a9df5ae1f97a6eb4faa0fd7c75596c03c",
+    "environment.yml": "959b2ebbba8bc1a0724f27104c6046e3f2ab29db74070ce759ff48a12766a674"
+  },
+  "default_batch_size": 16,
+  "protocol": "masked_mean_parallel_sentence_v1",
+  "postcheck_max_abs": 0.0,
+  "model_archive_sha256": "3583a8f750a8891440c1338a46399a9f18a2fc60f5db113506183e0a83c4161b"
+}
