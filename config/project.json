@@ -1,0 +1,48 @@
+{
+  "project": "PATHAK-embryo",
+  "species": {
+    "scientific_name": "Mus musculus",
+    "taxon_id": 10090
+  },
+  "developmental_window": {
+    "min_day": 7.5,
+    "max_day": 13.5,
+    "endpoints_inclusive": true
+  },
+  "ontology": {
+    "path": "data/go/go.obo",
+    "namespace": "biological_process",
+    "root_id": "GO:0008150",
+    "candidate_policy": "Keep all active BP terms in the resource table; exclude the namespace root from candidate retrieval."
+  },
+  "mela_programs": {
+    "path": "data/raw/mela/annotated_programs.csv",
+    "expected_programs": 70,
+    "sha256": "1489862271bbeb10a1dc9f0eaf7355d131fdfdfdb8455a55b3e2030dca9523c4",
+    "source_host": "CPU",
+    "source_path": "/hy-tmp/GSE342607/author_metadata/annotated_programs.csv",
+    "official_source": "https://mela.wi.mit.edu/download/",
+    "scope": "Published program reference; not a new program discovery."
+  },
+  "pending_mouse_resources": [
+    {
+      "resource": "mouse_gene_identifiers",
+      "planned_path": "data/reference/mouse/gene_identifiers.tsv",
+      "status": "not_prepared"
+    },
+    {
+      "resource": "mouse_go_annotations",
+      "planned_path": "data/reference/mouse/mouse_go_annotations.gaf.gz",
+      "status": "not_prepared"
+    }
+  ],
+  "output_directory": "results/01_resources",
+  "expression_and_lineage_policy": {
+    "source_host": "CPU",
+    "source_project": "/hy-tmp/seurat_project",
+    "require_versioned_cell_selection": true,
+    "whole_cell_and_nucleus_analysis": "separate_then_compare",
+    "biological_replicate": "embryo_or_confirmed_biological_sample",
+    "typewriter_scope": "E13.5 endpoint from one embryo; reconstructed ancestors are inferred."
+  }
+}

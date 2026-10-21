@@ -16,7 +16,7 @@
 
 相同线程设置下，256 条代表性 GO 定义的三轮编码中位数从 10.636 秒变为 9.340 秒，吞吐从 24.07 变为 27.41 条/秒，约 **1.139 倍**。这是约 14% 的吞吐提升，幅度有限；不能据此声称有数倍提速。batch=8 与 16 的速度接近，默认 16 依据轮换测速的中位数选择，8 也已通过全库核查。
 
-总体机器记录：[embedding-parallel-fix.json](../embedding-parallel-fix.json)。
+总体机器记录：[embedding-parallel-fix.json](../embedding-parallel-fix.json)。研究进展记录在 [02 分析进展](../../../docs/02_mouse_embryo_pathak_analysis_PROGRESS.md)。
 
 ## 根因：PAD、编码器数值路径及函数封装后的运行时重写
 

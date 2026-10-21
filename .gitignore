@@ -27,6 +27,12 @@ __pycache__/
 /Auxiliary_Files/
 /Example_data/
 
+# Mouse embryo inputs and derived results
+/data/raw/
+/data/reference/mouse/
+/results/
+/logs/
+
 # Local runtime payloads and verification logs
 /resources/jars/
 /resources/archives/

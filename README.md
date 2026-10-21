@@ -1,21 +1,25 @@
-# PATHAK 本地教学与 BioBERT 编码
+# PATHAK-embryo
 
-基于 [PATHAK](https://github.com/nilesh-iiita/PATHAK) 的本地环境与方法教学，保留植物示例，并提供经过严格数值验收的 BioBERT 批量编码。
-`local-teaching` 维护通用运行环境、教学和编码工具；`research/mouse-embryo` 继承这些修复并继续小鼠胚胎研究。
+基于 [PATHAK](https://github.com/nilesh-iiita/PATHAK) 的小鼠胚胎 gene–GO 研究项目，目标窗口为 **E7.5–E13.5**。
+结合文献证据、单细胞/单核表达与遗传条码支持的重建谱系，研究功能程序变化和候选基因。
+优先研究心脏发生相关祖细胞与心肌细胞，具体范围由阶段、组织来源和标签覆盖确定。
 
 ## 当前工作入口
 
-- [环境与模型检查](tutorials/local_0_environment_check.ipynb)
-- [GO 语料准备](tutorials/local_1_GO.ipynb)
-- [GO 定义向量](tutorials/local_2_GO_term_embedding.ipynb)
-- [植物示例文献处理](tutorials/local_3_PhenoMiner_plant.ipynb)
-- [BioBERT 模型身份](config/biobert_model.json)
-- [编码检查和报告](resources/checks/README.md)
+- [执行计划](docs/00_mouse_embryo_pathak_PLAN.md)：资源、程序基准、文献小试、表达与谱系分析的顺序和条件。
+- [01 资源与数据准备进展](docs/01_mouse_embryo_pathak_resources_PROGRESS.md)：资源核查、输入数量及数据集范围。
+- [02 方法验证与研究分析进展](docs/02_mouse_embryo_pathak_analysis_PROGRESS.md)：三本本地方法 Notebook、编码检查及阶段执行状态。
+- [阶段1 · 步骤01：GO 与 MELA 程序检查](notebooks/stage1/01_GO_MELA_resources.ipynb)：读取本地 GO 和作者 70 个程序，保存资源底表及待办。
+- [项目配置](config/project.json)：物种、阶段、路径和输入来源。
+- [上游与数据来源](tutorials/UPSTREAM.md)：原始方法、保留 Notebook 和程序表校验值。
 
+小鼠 ID 映射和小鼠 GO 注释尚未准备；常规 GO 分析、文献证据、表达及谱系分析仍待执行。
+现有植物教学保存在 tutorials/，其 TAIR 表和旧向量用于理解原方法；小鼠分析从 notebooks/ 开始。
+步骤01的派生结果保存在 results/01_resources/。阶段1的 Notebook 统一放在 notebooks/stage1/，按 01、02 等阶段内步骤编号；步骤02的文件命名见执行计划，内容后续编写。
 
 ## stage3 环境与教学
 
-项目目录为 /root/gpufree-data/PATHAK，Conda 环境名为 pathak。本地环境检查与植物教学保存在 tutorials/，模型和分句资源位于 models/，Java 运行库及校验工具位于 resources/。
+项目目录为 /root/gpufree-data/PATHAK，Conda 环境名为 pathak。原有环境与植物教学保存在 tutorials/；小鼠教学入口位于 notebooks/，派生结果位于 results/。模型位于 models/，运行资源位于 resources/。
 
 ### 1. 软件环境
 
@@ -58,14 +62,27 @@ PATHAK/
 ├── environment.yml
 ├── pathak_runtime.py
 ├── config/
+│   ├── project.json
 │   └── biobert_model.json
+├── docs/
+│   ├── 00_mouse_embryo_pathak_PLAN.md
+│   ├── 01_mouse_embryo_pathak_resources_PROGRESS.md
+│   └── 02_mouse_embryo_pathak_analysis_PROGRESS.md
+├── notebooks/
+│   └── stage1/
+│       └── 01_GO_MELA_resources.ipynb
 ├── data/
-│   └── go/go.obo
+│   ├── go/go.obo
+│   ├── raw/mela/annotated_programs.csv
+│   └── reference/mouse/                 # 待准备小鼠标识和 GO 注释
+├── results/                            # 资源检查及后续分析输出
 ├── tutorials/
+│   ├── UPSTREAM.md
 │   ├── local_0_environment_check.ipynb
 │   ├── local_1_GO.ipynb
 │   ├── local_2_GO_term_embedding.ipynb
 │   ├── local_3_PhenoMiner_plant.ipynb
+│   ├── upstream/                       # 三本上游原始 Notebook
 │   ├── Auxiliary_Files/                # 植物教学词典
 │   ├── Example_data/                   # 植物教学示例 XML
 │   └── ...                             # 既有教学输出
@@ -140,7 +157,7 @@ TUTORIALS_ROOT = PROJECT_ROOT / "tutorials"
 
 ### 5. 原有植物教学顺序
 
-以下教学用于理解上游方法和验证本地文献编码流程。
+以下保留教学用于理解上游方法。小鼠研究从 notebooks/stage1/01_GO_MELA_resources.ipynb 开始。
 
 | 顺序 | Notebook | 主要输入 | 生成内容（tutorials/） |
 | --- | --- | --- | --- |
